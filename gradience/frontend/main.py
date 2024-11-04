@@ -34,7 +34,7 @@ from gradience.backend.utils.theming import generate_gtk_css
 from gradience.backend.constants import rootdir, app_id, rel_ver
 
 from gradience.frontend.views.main_window import GradienceMainWindow
-from gradience.frontend.views.plugins_list import GradiencePluginsList
+from gradience.frontend.views.plugins_list_mock import GradiencePluginsList
 from gradience.frontend.views.about_window import GradienceAboutWindow
 from gradience.frontend.views.welcome_window import GradienceWelcomeWindow
 from gradience.frontend.views.presets_manager_window import GradiencePresetWindow
@@ -143,13 +143,13 @@ class GradienceApplication(Adw.Application):
         self.actions.create_action("quit",
                         self.win.on_close_request, ["<primary>q"])
 
-        self.actions.create_action("switch_to_colors_page", 
+        self.actions.create_action("switch_to_colors_page",
                         self.win.switch_to_colors_page, ["<alt>1"])
 
-        self.actions.create_action("switch_to_theming_page", 
+        self.actions.create_action("switch_to_theming_page",
                         self.win.switch_to_theming_page, ["<alt>2"])
 
-        self.actions.create_action("switch_to_advanced_page", 
+        self.actions.create_action("switch_to_advanced_page",
                         self.win.switch_to_advanced_page, ["<alt>3"])
 
         self.actions.create_action("about",
