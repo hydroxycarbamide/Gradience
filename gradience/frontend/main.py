@@ -95,7 +95,9 @@ class GradienceApplication(Adw.Application):
 
         self.style_manager = Adw.StyleManager.get_default()
 
-        self.use_jsdelivr = self.settings.get_boolean("use-jsdelivr")
+        # TODO: Using a fallback like jsdelivr might be a good idea
+        # self.use_jsdelivr = self.settings.get_boolean("use-jsdelivr")
+        self.use_jsdelivr = False
 
     def do_activate(self):
         """Called when the application is activated."""
