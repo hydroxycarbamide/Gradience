@@ -29,7 +29,7 @@ Generated with Gradience
 
 Issues caused by theming should be reported to Gradience repository, and not to upstream
 
-https://github.com/GradienceTeam/Gradience
+https://github.com/hydroxycarbamide/Gradience
 */
 
 """
