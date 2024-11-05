@@ -27,8 +27,7 @@
 # or more simply, just push and the bot will do this for you.
 
 anyascii
-material-color-utilities-python
 svglib
-yapsy
 Jinja2
+Pillow
 libsass
