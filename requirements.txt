@@ -29,5 +29,5 @@
 anyascii
 svglib
 Jinja2
-Pillow
+pillow
 libsass
