@@ -1,8 +1,7 @@
-> [!IMPORTANT]
-> Gradience has been archived as of June 29, 2024. See the [blog post](https://daudix.one/blog/archiving-gradience/) for some information on the rationale behind this decision.
-
-> [!NOTE]
-> Gradience is looking for a maintainer(s)! if you know Python and GTK4/Libadwaita and willing to work on it, chip in on [Matrix](https://matrix.to/#/#Gradience:matrix.org) and [Discord](https://discord.com/invite/4njFDtfGEZ).
+> This project is a fork of [Gradience](https://github.com/GradienceTeam/Gradience), that was previously maintained by the [Gradience Team](./MAINTAINERS.md).
+>
+> This is currently an effort to have working color schemes under more recent GNOME versions.
+> Some features (such as the plugin manager) won't be maintained as I am not interested in them at the moment.
 
 <h1 align="center">
   <img src="data/icons/hicolor/scalable/apps/com.github.GradienceTeam.Gradience.svg" alt="Gradience" width="192" height="192"/>
