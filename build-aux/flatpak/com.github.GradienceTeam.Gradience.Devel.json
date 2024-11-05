@@ -44,17 +44,17 @@
     "modules" : [
         "pypi-dependencies.json",
         {
-            "name": "python-lxml",
-            "buildsystem": "simple",
-            "build-commands": [
+            "name" : "python-lxml",
+            "buildsystem" : "simple",
+            "build-commands" : [
                 "python3 setup.py build --with-cython",
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/lxml/lxml/releases/download/lxml-5.0.0-1/lxml-5.0.0.tar.gz",
-                    "sha256": "67216b13a832adb984cfd20437261236f8c05fc19a0f7d4c59c235fddb17dfdb"
+                    "type" : "archive",
+                    "url" : "https://github.com/lxml/lxml/releases/download/lxml-5.0.0-1/lxml-5.0.0.tar.gz",
+                    "sha256" : "67216b13a832adb984cfd20437261236f8c05fc19a0f7d4c59c235fddb17dfdb"
                 }
             ]
         },
@@ -70,60 +70,60 @@
             ]
         },
         {
-            "name": "sassc",
-            "sources": [
+            "name" : "sassc",
+            "sources" : [
                 {
-                    "type": "git",
-                    "url": "https://github.com/sass/sassc.git",
-                    "tag": "3.6.2"
+                    "type" : "git",
+                    "url" : "https://github.com/sass/sassc.git",
+                    "tag" : "3.6.2"
                 },
                 {
-                    "type": "script",
-                    "dest-filename": "autogen.sh",
-                    "commands": [
+                    "type" : "script",
+                    "dest-filename" : "autogen.sh",
+                    "commands" : [
                         "autoreconf -si"
                     ]
                 }
             ],
-            "cleanup": [
+            "cleanup" : [
                 "*"
             ],
-            "modules": [
+            "modules" : [
                 {
-                    "name": "libsass",
-                    "sources": [
+                    "name" : "libsass",
+                    "sources" : [
                         {
-                            "type": "git",
-                            "url": "https://github.com/sass/libsass.git",
-                            "tag": "3.6.6"
+                            "type" : "git",
+                            "url" : "https://github.com/sass/libsass.git",
+                            "tag" : "3.6.6"
                         },
                         {
-                            "type": "script",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
+                            "type" : "script",
+                            "dest-filename" : "autogen.sh",
+                            "commands" : [
                                 "autoreconf -si"
                             ]
                         }
                     ],
-                    "cleanup": [
+                    "cleanup" : [
                         "*"
                     ]
                 }
             ]
         },
         {
-            "name": "libportal",
-            "buildsystem": "meson",
-            "config-opts": [
+            "name" : "libportal",
+            "buildsystem" : "meson",
+            "config-opts" : [
                 "-Ddocs=false",
                 "-Dvapi=false",
                 "-Dbackend-gtk4=enabled"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "git",
-                    "url": "https://github.com/flatpak/libportal.git",
-                    "branch": "main"
+                    "type" : "git",
+                    "url" : "https://github.com/flatpak/libportal.git",
+                    "branch" : "main"
                 }
             ]
         },
@@ -131,8 +131,9 @@
             "name" : "gradience",
             "builddir" : true,
             "buildsystem" : "meson",
-            "config-opts": [
-                "-Dbuildtype=debug"
+            "config-opts" : [
+                "-Dbuildtype=debug",
+                "--libdir=lib"
             ],
             "sources" : [
                 {
@@ -141,5 +142,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "build-options" : {
+        "env" : {        }
+    }
 }
