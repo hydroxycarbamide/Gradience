@@ -18,11 +18,12 @@
 
 import os
 
-import material_color_utilities_python as monet
+from PIL import Image
 
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPM
 
+from gradience.material_color_utilities_python.utils import theme_utils
 from gradience.backend.models.preset import Preset
 from gradience.backend.utils.colors import argb_to_color_code
 
@@ -48,7 +49,7 @@ class Monet:
             raise ValueError("XML files are unsupported by Gradience's Monet implementation")
 
         try:
-            monet_img = monet.Image.open(image_path)
+            monet_img = Image.open(image_path)
         except Exception as e:
             logging.error("An error occurred while generating a Monet palette.", exc=e)
             raise
@@ -58,10 +59,10 @@ class Monet:
             hsize = int((float(monet_img.size[1]) * float(wpercent)))
 
             monet_img = monet_img.resize(
-                (basewidth, hsize), monet.Image.Resampling.LANCZOS
+                (basewidth, hsize), Image.Resampling.LANCZOS
             )
 
-            self.palette = monet.themeFromImage(monet_img)
+            self.palette = theme_utils.themeFromImage(monet_img)
 
         return self.palette
 

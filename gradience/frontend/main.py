@@ -21,7 +21,6 @@ import sys
 import threading
 
 from pathlib import Path
-from material_color_utilities_python import hexFromArgb
 from gi.repository import GObject, Gtk, Gdk, Gio, Adw, GLib
 
 from gradience.backend.globals import presets_dir, get_gtk_theme_dir
@@ -44,6 +43,7 @@ from gradience.frontend.dialogs.app_type_dialog import GradienceAppTypeDialog
 from gradience.frontend.dialogs.save_dialog import GradienceSaveDialog
 from gradience.frontend.widgets.custom_css_group import GradienceCustomCSSGroup
 
+from gradience.backend.utils.colors import hexFromArgb
 from gradience.frontend.utils.actions import ActionHelpers
 from gradience.frontend.schemas.preset_schema import preset_schema
 

@@ -16,8 +16,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-import material_color_utilities_python as monet
-
 from gradience.backend.globals import adw_variables_prefixes, adw_palette_prefixes
 
 from gradience.backend.logger import Logger
@@ -67,14 +65,14 @@ def argb_to_color_code(argb, alpha=None) -> str:
     """
     rgba_base = "rgba({0}, {1}, {2}, {3})"
 
-    red = monet.redFromArgb(argb)
-    green = monet.greenFromArgb(argb)
-    blue = monet.blueFromArgb(argb)
+    red = redFromArgb(argb)
+    green = greenFromArgb(argb)
+    blue = blueFromArgb(argb)
     if not alpha:
-        alpha = monet.alphaFromArgb(argb)
+        alpha = alphaFromArgb(argb)
 
     if alpha in (255, 0.0):
-        return monet.hexFromArgb(argb)
+        return hexFromArgb(argb)
 
     return rgba_base.format(red, green, blue, alpha)
 
@@ -123,3 +121,43 @@ def color_vars_to_color_code(variables: dict, palette: dict) -> dict:
             __update_vars("variable", variable, color_value)
 
     return output
+
+
+# /**
+#  * Returns the alpha component of a color in ARGB format.
+#  */
+def alphaFromArgb(argb):
+    return argb >> 24 & 255
+
+
+# /**
+#  * Returns the red component of a color in ARGB format.
+#  */
+def redFromArgb(argb):
+    return argb >> 16 & 255
+
+
+# /**
+#  * Returns the green component of a color in ARGB format.
+#  */
+def greenFromArgb(argb):
+    return argb >> 8 & 255
+
+
+# /**
+#  * Returns the blue component of a color in ARGB format.
+#  */
+def blueFromArgb(argb):
+    return argb & 255
+
+
+def hexFromArgb(argb):
+    r = redFromArgb(argb)
+    g = greenFromArgb(argb)
+    b = blueFromArgb(argb)
+    outParts = [f'{r:x}', f'{g:x}', f'{b:x}']
+    # Pad single-digit output values
+    for i, part in enumerate(outParts):
+        if (len(part) == 1):
+            outParts[i] = '0' + part
+    return '#' + ''.join(outParts)

@@ -1,3 +1,6 @@
 [submodule "data/submodules"]
 	path = data/submodules
 	url = https://github.com/hydroxycarbamide/Submodules
+[submodule "gradience/material-color-utilities-python"]
+	path = gradience/material-color-utilities-python
+	url = https://github.com/hydroxycarbamide/material-color-utilities-python.git
