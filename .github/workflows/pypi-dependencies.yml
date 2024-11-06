@@ -43,10 +43,9 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v7.0.5
         with:
-          author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           title: "meta: update PyPI dependencies for Flatpak"
           body: "This automated PR contains an auto-generated `pypi-dependencies.json` file used in Flatpak manifests."
           labels: flatpak, ci/automated-pr
           commit-message: "meta: update Flatpak PyPI dependencies"
-          committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          sign-commits: true
           branch: update-pypi-deps
