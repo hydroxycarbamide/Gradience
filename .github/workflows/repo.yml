@@ -47,12 +47,14 @@ jobs:
       - name: Build
         uses: andyholmes/flatter@main
         with:
+          #TODO: Publish to flathub as a different name? Or ask to take over the Organisation?
           files: |
             build-aux/flatpak/com.github.GradienceTeam.Gradience.Devel.json
+            build-aux/flatpak/com.github.GradienceTeam.Gradience.json
           arch: ${{ matrix.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           upload-bundles: true
-          # upload-pages-artifact: false # TODO: Make an actual webpage ?
+          # upload-pages-artifact: ${{ matrix.arch == 'aarch64' }} # TODO: Make an actual webpage?
           # upload-pages-includes: |
           #   repo/default.css
           #   repo/index.html
