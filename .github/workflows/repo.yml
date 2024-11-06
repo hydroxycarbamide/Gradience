@@ -32,7 +32,7 @@ jobs:
           submodules: recursive
 
       - name: Install flatpak dependencies
-        run: flatpak install -y org.gnome.Sdk/${{ matrix.arch }}/${GNOME_VERSION}
+        run: flatpak install -y org.gnome.Sdk/${{ matrix.arch }}/${GNOME_VERSION} org.gnome.Platform/${{ matrix.arch }}/${GNOME_VERSION}
 
       # See "Multiple Architectures" below
       - name: Setup QEMU
