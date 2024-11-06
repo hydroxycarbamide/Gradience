@@ -21,12 +21,18 @@ jobs:
       # Only one job at a time can use the shared repository cache
       max-parallel: 1
 
+    env:
+      GNOME_VERSION: 47
+
     steps:
       # Checkout a repository with Flatpak manifests
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - name: Install flatpak dependencies
+        run: flatpak install -y org.gnome.Sdk/${{ matrix.arch }}/${GNOME_VERSION}
 
       # See "Multiple Architectures" below
       - name: Setup QEMU
