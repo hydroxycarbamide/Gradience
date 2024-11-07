@@ -40,6 +40,7 @@
         "thumbnail_fg_color": "rgba(0, 0, 0, 0.8)",
         "sidebar_bg_color": "#ebebeb",
         "sidebar_fg_color": "rgba(0, 0, 0, 0.8)",
+        "sidebar_border_color": "#dbdbdb",
         "sidebar_backdrop_color": "#f2f2f2",
         "sidebar_shade_color": "rgba(0, 0, 0, 0.07)",
         "secondary_sidebar_bg_color": "#f3f3f3",

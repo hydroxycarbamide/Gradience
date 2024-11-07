@@ -290,6 +290,11 @@ preset_schema = {
                     "adw_gtk3_support": "yes",
                 },
                 {
+                    "name": "sidebar_border_color",
+                    "title": _("Border Color"),
+                    "adw_gtk3_support": "no",
+                },
+                {
                     "name": "sidebar_backdrop_color",
                     "title": _("Backdrop Color"),
                     "explanation": _(
