@@ -7,15 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Out of support
+
+- Support for GNOME Shell theming (supported up to 44)
+- Support for jsdelivr alternative option for fetching community themes
+- Support for plugins
+
 ### Added
 
-- Support for GNOME Shell theming
 - New, refreshed design for `Theming` tab
 - Preferences options for enabling built-in Theme Engines
 
 ### Changed
 
-- Update runtime to GNOME 44
+- Update runtime to GNOME 47
 - Move reset and restore preset options to preferences
 
 ### Fixed
@@ -23,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improve contrasts in Monet generated error/destructive colors
 - Don't fail at compilation if host doesn't have `git` installed
 - Don't fail at resetting presets if `gtk.css` isn't found
+- Support for libadwaita sidebar
 
 ## [0.4.1] - 2023-03-05
 
