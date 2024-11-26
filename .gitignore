@@ -20,6 +20,7 @@
 
 ### Flatpak ###
 .flatpak-builder
+.flatpak
 build
 builddir
 build-dir
