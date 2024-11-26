@@ -2,7 +2,7 @@ viewsdir = 'gradience/frontend/views'
 
 gradience_sources = [
     '__init__.py',
-    'about_window.py',
+    'about_dialog.py',
     'main_window.py',
     'no_plugin_window.py',
     'plugins_list_mock.py',
