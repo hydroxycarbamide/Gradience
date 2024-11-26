@@ -37,7 +37,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "Ubah tampilan Adwaita, dengan mudah"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Tim Gradience"
 
@@ -152,7 +152,7 @@ msgstr "Keluar"
 msgid "Log out to allow changes to take effect."
 msgstr "Keluar agar perubahan dapat diterapkan."
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "Mesin Monet"
 
@@ -221,32 +221,32 @@ msgstr "Beralih Plugin"
 msgid "Remove Plugin"
 msgstr "Hapus Plugin"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "Preferensi"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "Umum"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "Aplikasi Flatpak"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr "Tema sandboxed aplikasi GTK 4"
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 msgid "Allow GTK 4 Flatpak apps of current user to access custom themes"
 msgstr ""
 "Izinkan aplikasi GTK 4 Flatpak pengguna saat ini untuk mengakses tema khusus"
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr "Aplikasi GTK 4 sandboxed tema (Sistem)"
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
@@ -254,59 +254,59 @@ msgstr ""
 "Izinkan aplikasi GTK 4 Flatpak dari semua pengguna untuk mengakses tema "
 "khusus (Diperlukan otentikasi)"
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr "Tema sandboxed Aplikasi GTK 3"
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 msgid "Allow GTK 3 Flatpak apps of current user to access adw-gtk3 theme"
 msgstr ""
 "Izinkan aplikasi GTK 3 Flatpak pengguna saat ini untuk mengakses tema adw-"
 "gtk3"
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "Memperoleh Konfigurasi"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 #, fuzzy
 #| msgid "Use an alternative server for downloading presets"
 msgid "Use an alternative server for fetching presets"
 msgstr "Pergunakan alternatif peladen untuk mengunduh konfigurasi"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 #, fuzzy
 #| msgid "JSDelivr will be used instead of direct preset fetching from GitHub"
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr "Mengambil konfigurasi dari JSDelivr ketimbang dari GitHub"
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "Repositori Konfigurasi Khusus"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "Alamat URL repositori khusus"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "Tema"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "Perkakas Tema"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
@@ -314,11 +314,11 @@ msgstr ""
 "Perkakas tema dibuat dengan generator tema untuk variasi yang dapat "
 "dikustomisasi berupa program ataupun kerangka kerja."
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 msgid "Shell Engine"
 msgstr "Perkakas Antarmuka"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 #, fuzzy
 #| msgid ""
 #| "Shell Engine generates a custom GNOME Shell theme based on a currently "
@@ -328,7 +328,7 @@ msgstr ""
 "Pekakas antarmuka menghasilkan kustomisasi tema GNOME Shell berdasarkan "
 "konfigurasi yang dipilih."
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 #, fuzzy
 #| msgid ""
 #| "Monet Engine generates a Material Design 3 palette by extracting the "
@@ -1277,19 +1277,19 @@ msgstr "Aksen Warna Latar Depan"
 msgid "OSD Foreground Color"
 msgstr "Warna OSD Latar Depan"
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr "May Mantari, 2023"
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "Hak Cipta oleh Tim Gradience © 2022-2023"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "Pengaya oleh"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1297,11 +1297,11 @@ msgstr ""
 "Kontributor GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "Konfigurasi oleh"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

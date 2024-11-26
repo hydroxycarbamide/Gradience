@@ -1,4 +1,4 @@
-# preferences_window.py
+# preferences_dialog.py
 #
 # Change the look of Adwaita, with ease
 # Copyright (C) 2022-2023, Gradience Team
@@ -31,9 +31,9 @@ from gradience.backend.logger import Logger
 logging = Logger()
 
 
-@Gtk.Template(resource_path=f"{rootdir}/ui/preferences_window.ui")
-class GradiencePreferencesWindow(Adw.PreferencesWindow):
-    __gtype_name__ = "GradiencePreferencesWindow"
+@Gtk.Template(resource_path=f"{rootdir}/ui/preferences_dialog.ui")
+class GradiencePreferencesDialog(Adw.PreferencesDialog):
+    __gtype_name__ = "GradiencePreferencesDialog"
 
     general_page = Gtk.Template.Child()
     theming_page = Gtk.Template.Child()
@@ -59,9 +59,10 @@ class GradiencePreferencesWindow(Adw.PreferencesWindow):
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
 
-        self.set_transient_for(self.win)
-
         self.setup()
+    
+    def get_application(self):
+        return self.app
 
     def setup(self):
         self.setup_flatpak_group()

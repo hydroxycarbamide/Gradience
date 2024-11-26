@@ -1,4 +1,4 @@
-# about_window.py
+# about_dialog.py
 #
 # Change the look of Adwaita, with ease
 # Copyright (C) 2023, Gradience Team
@@ -26,7 +26,7 @@ from gradience.backend import constants
 # no quotes) and is not meant to be translated literally.
 translator_credits = _("translator-credits")
 
-class GradienceAboutWindow:
+class GradienceAboutDialog:
     def __init__(self, parent):
         self.parent = parent
         self.app = self.parent.get_application()
@@ -34,9 +34,8 @@ class GradienceAboutWindow:
         self.setup()
 
     def setup(self):
-        self.about_window = Adw.AboutWindow(
+        self.about_dialog = Adw.AboutDialog(
             application_name="Gradience",
-            transient_for=self.app.get_active_window(),
             application_icon=constants.app_id,
             developer_name=_("Gradience Team"),
             website=constants.project_url,
@@ -59,13 +58,13 @@ class GradienceAboutWindow:
             release_notes_version=constants.rel_ver,
         )
 
-        self.about_window.add_credit_section(
+        self.about_dialog.add_credit_section(
             _("Plugins by"),
             [
                 _("Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/contributors")
             ]
         )
-        self.about_window.add_credit_section(
+        self.about_dialog.add_credit_section(
             _("Presets by"),
             [
                 _("Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/contributors")
@@ -73,4 +72,4 @@ class GradienceAboutWindow:
         )
 
     def show_about(self):
-        self.about_window.present()
+        self.about_dialog.present(self.parent)

@@ -11,7 +11,7 @@ data/ui/monet_theming_group.blp
 data/ui/no_plugin_window.blp
 data/ui/option_row.blp
 data/ui/plugin_row.blp
-data/ui/preferences_window.blp
+data/ui/preferences_dialog.blp
 data/ui/preset_row.blp
 data/ui/presets_manager_window.blp
 data/ui/repo_row.blp
@@ -30,7 +30,7 @@ gradience/frontend/dialogs/unsupported_shell_dialog.py
 gradience/frontend/main.py
 gradience/frontend/schemas/preset_schema.py
 gradience/frontend/schemas/shell_schema.py
-gradience/frontend/views/about_window.py
+gradience/frontend/views/about_dialog.py
 gradience/frontend/views/main_window.py
 gradience/frontend/views/plugins_list.py
 gradience/frontend/views/presets_manager_window.py

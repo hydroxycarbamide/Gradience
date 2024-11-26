@@ -6,7 +6,7 @@ gradience_sources = [
     'main_window.py',
     'no_plugin_window.py',
     'plugins_list_mock.py',
-    'preferences_window.py',
+    'preferences_dialog.py',
     'presets_manager_window.py',
     'share_window.py',
     'shell_prefs_window.py',

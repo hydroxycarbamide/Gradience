@@ -33,7 +33,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "轻松改变 Adwaita 的外观"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Gradience 团队"
 
@@ -144,7 +144,7 @@ msgstr "注销"
 msgid "Log out to allow changes to take effect."
 msgstr "注销以使更改生效。"
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "Monet 引擎"
 
@@ -213,97 +213,97 @@ msgstr "切换插件"
 msgid "Remove Plugin"
 msgstr "删除插件"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "选项"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "常规"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "Flatpak 应用"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr "主题沙盒 GTK 4 应用"
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 msgid "Allow GTK 4 Flatpak apps of current user to access custom themes"
 msgstr "允许当前用户的 GTK 4 Flatpak 应用访问自定义主题"
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr "主题沙盒 GTK 4 应用（系统）"
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
 msgstr "允许所有用户的 GTK 4 Flatpak 应用访问自定义主题（需要身份验证）"
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr "主题沙盒 GTK 3 应用"
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 msgid "Allow GTK 3 Flatpak apps of current user to access adw-gtk3 theme"
 msgstr "允许当前用户的 GTK 3 Flatpak 应用访问 adw-gtk3 主题"
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr "主题沙盒 GTK 3 应用（系统）"
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
 msgstr "允许所有用户的GTK 3 Flatpak应用访问adw-gtk3主题（需要身份验证）"
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "预设抓取"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 msgid "Use an alternative server for fetching presets"
 msgstr "使用备用服务器获取预设"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr "使用 JSDelivr 而不是直接从 GitHub 获取预设"
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "自定义预设存储库"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "自定义存储库 URL 地址"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "主题"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "主题引擎"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
 msgstr "主题引擎是用于各种可定制程序/框架的内置主题生成器。"
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 msgid "Shell Engine"
 msgstr "Shell 引擎"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 msgid "Generates GNOME Shell theme based on current preset"
 msgstr "根据当前预设生成 GNOME Shell 主题"
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 msgid "Generates a Material Design 3 palette by extracting colors of an image"
 msgstr "通过提取图像的颜色生成 Material Design 3 调色板"
 
@@ -1171,19 +1171,19 @@ msgstr "重点前景色"
 msgid "OSD Foreground Color"
 msgstr "OSD 前景颜色"
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr "翻译人员"
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "版权所有 © 2022-2023 Gradience Team"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "插件作者"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1191,11 +1191,11 @@ msgstr ""
 "GitHub 上的贡献者 https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "预设作者"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

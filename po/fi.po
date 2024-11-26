@@ -34,7 +34,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "Muuta Adwaitan ulkoasua vaivatta"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Gradience-tiimi"
 
@@ -169,7 +169,7 @@ msgstr "Kirjaudu ulos"
 msgid "Log out to allow changes to take effect."
 msgstr "Kirjaudu ulos, jotta muutokset tulevat voimaan."
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "Monet-moottori"
 
@@ -245,23 +245,23 @@ msgstr "Käytä liitännäistä"
 msgid "Remove Plugin"
 msgstr "Poista liitännäinen"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "Yleiset"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "Flatpak-sovellukset"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr ""
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 #, fuzzy
 #| msgid ""
 #| "Override Flatpak permissions for current user to allow GTK 4 Flatpak "
@@ -271,21 +271,21 @@ msgstr ""
 "Ohita Flatpak-oikeudet nykyisen käyttäjän osalta salliaksesi Flatpak-"
 "muotoisten GTK 4 -sovellusten käyttää mukautettuja teemoja."
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr ""
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 #, fuzzy
 #| msgid ""
 #| "Override Flatpak permissions for current user to allow GTK 3 Flatpak apps "
@@ -295,63 +295,63 @@ msgstr ""
 "Ohita Flatpak-oikeudet nykyisen käyttäjän osalta salliaksesi Flatpak-"
 "muotoisten GTK 3 -sovellusten käyttää adw-gtk3-teemaa."
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "Esiasetusten haku"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 #, fuzzy
 #| msgid "Use an alternative server for downloading presets"
 msgid "Use an alternative server for fetching presets"
 msgstr "Käytä vaihtoehtoista palvelinta esiasetusten lataukseen"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr ""
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "Mukautetut esiasetusten tietovarastot"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "Mukautetun tietovaraston URL-osoite"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "Teemoitus"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "Teemamoottorit"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
 msgstr ""
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 #, fuzzy
 #| msgid "Monet Engine"
 msgid "Shell Engine"
 msgstr "Monet-moottori"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 msgid "Generates GNOME Shell theme based on current preset"
 msgstr ""
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 #, fuzzy
 #| msgid ""
 #| "Monet is an engine that generates a Material Design 3 palette from an "
@@ -1309,19 +1309,19 @@ msgstr "Edustaväri"
 msgid "OSD Foreground Color"
 msgstr "Edustaväri"
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "Tekijänoikeus © 2022-2023 Gradience-tiimi"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "Liitännäiset"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1329,11 +1329,11 @@ msgstr ""
 "Avustajat GitHubissa https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "Esiasetukset"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

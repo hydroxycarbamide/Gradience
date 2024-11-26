@@ -33,7 +33,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "Altera a aparência do Adwaita com facilidade"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Equipa do Gradience"
 
@@ -155,7 +155,7 @@ msgstr "Terminar sessão"
 msgid "Log out to allow changes to take effect."
 msgstr "Termina a sessão para que as alterações tenham efeito."
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "Motor Monet"
 
@@ -230,23 +230,23 @@ msgstr "Alternar Plugin"
 msgid "Remove Plugin"
 msgstr "Remover Plugin"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "Preferências"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "Geral"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "Aplicações Flatpak"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr ""
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 #, fuzzy
 #| msgid ""
 #| "Override Flatpak permissions for current user to allow GTK 4 Flatpak apps "
@@ -256,21 +256,21 @@ msgstr ""
 "Sobrescrever as permissões do Flatpak para o utilizador atual, permitindo "
 "que as aplicações Flatpak GTK 4 acedam a temas personalizados."
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr ""
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 #, fuzzy
 #| msgid ""
 #| "Override Flatpak permissions for current user to allow GTK 3 Flatpak apps "
@@ -280,50 +280,50 @@ msgstr ""
 "Sobrescrever as permissões do Flatpak para o utilizador atual, permitindo "
 "que as aplicações Flatpak GTK 3 acedam ao tema adw-gtk3."
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
 msgstr ""
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "Obtenção de Presets"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 #, fuzzy
 #| msgid "Use an alternative server for downloading presets"
 msgid "Use an alternative server for fetching presets"
 msgstr "Utilizar um servidor alternativo para descarregar presets"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 #, fuzzy
 #| msgid "JSDelivr will be used instead of direct preset fetching from GitHub"
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr ""
 "O JSDelivr será utilizado em vez de obter presets diretamente do GitHub"
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "Repositórios Personalizados de Presets"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "Endereço URL do Repositório Personalizado"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "Tematização"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "Motores de Temas"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
@@ -331,11 +331,11 @@ msgstr ""
 "Os Motores de Temas são os geradores de temas incorporados para vários "
 "programas/frameworks personalizáveis."
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 msgid "Shell Engine"
 msgstr "Motor Shell"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 #, fuzzy
 #| msgid ""
 #| "Shell Engine generates a custom GNOME Shell theme based on a currently "
@@ -345,7 +345,7 @@ msgstr ""
 "O Motor Shell gera um tema personalizado do GNOME Shell com base no preset "
 "atualmente escolhido."
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 #, fuzzy
 #| msgid ""
 #| "Monet Engine generates a Material Design 3 palette by extracting the "
@@ -1269,19 +1269,19 @@ msgstr ""
 msgid "OSD Foreground Color"
 msgstr ""
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr ""
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "Direitos Reservados © 2022-2023 Programadores do Gradience"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "Plugins por"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1289,11 +1289,11 @@ msgstr ""
 "Colaboradores no GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "Predefinições por"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

@@ -35,7 +35,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "அத்வைதாவின் தோற்றத்தை எளிதில் மாற்றுங்கள்"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "கிரேடியன்ஸ் குழு"
 
@@ -150,7 +150,7 @@ msgstr "வெளியேறு"
 msgid "Log out to allow changes to take effect."
 msgstr "மாற்றங்கள் நடைமுறைக்கு வர அனுமதிக்க வெளியேறவும்."
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "மோனெட் எஞ்சின்"
 
@@ -221,33 +221,33 @@ msgstr "செருகுநிரலை நிலைமாற்றவும�
 msgid "Remove Plugin"
 msgstr "செருகுநிரலை அகற்று"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வுகள்"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "பொது"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "பிளாட்பேக் பயன்பாடுகள்"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr "தீம் சாண்ட்பாக்ஸ் செய்யப்பட்ட GTK 4 பயன்பாடுகள்"
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 msgid "Allow GTK 4 Flatpak apps of current user to access custom themes"
 msgstr ""
 "தனிப்பயன் தீம்களை அணுக தற்போதைய பயனரின் GTK 4 Flatpak பயன்பாடுகளை "
 "அனுமதிக்கவும்"
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr "தீம் சாண்ட்பாக்ஸ் செய்யப்பட்ட GTK 4 பயன்பாடுகள் (அமைப்பு)"
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
@@ -255,20 +255,20 @@ msgstr ""
 "அனைத்து பயனர்களின் GTK 4 Flatpak பயன்பாடுகளையும் தனிப்பயன் தீம்களை அணுக "
 "அனுமதிக்கவும் (அங்கீகாரம் தேவை)"
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr "தீம் சாண்ட்பாக்ஸ் செய்யப்பட்ட GTK 3 பயன்பாடுகள்"
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 msgid "Allow GTK 3 Flatpak apps of current user to access adw-gtk3 theme"
 msgstr ""
 "தற்போதைய பயனரின் GTK 3 Flatpak பயன்பாடுகளை adw-gtk3 தீம் அணுக அனுமதிக்கவும்"
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr "தீம் சாண்ட்பாக்ஸ் செய்யப்பட்ட GTK 3 பயன்பாடுகள் (அமைப்பு)"
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
@@ -276,37 +276,37 @@ msgstr ""
 "அனைத்து பயனர்களின் GTK 3 Flatpak பயன்பாடுகளும் adw-gtk3 தீமை அணுக "
 "அனுமதிக்கவும் (அங்கீகாரம் தேவை)"
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "முன்னமைக்கப்பட்ட பெறுதல்"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 msgid "Use an alternative server for fetching presets"
 msgstr "முன்னமைவுகளைப் பெற மாற்று சேவையகத்தைப் பயன்படுத்தவும்"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr ""
 "GitHub இலிருந்து நேரடியாக முன்னமைவுகளைப் பெறுவதற்குப் பதிலாக JSDelivr ஐப் "
 "பயன்படுத்தவும்"
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "தனிப்பயன் முன்னமைக்கப்பட்ட களஞ்சியங்கள்"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "தனிப்பயன் களஞ்சிய URL முகவரி"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "தீமிங்"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "தீம் இயந்திரங்கள்"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
@@ -314,15 +314,15 @@ msgstr ""
 "தீம் இயந்திரங்கள் பல்வேறு தனிப்பயனாக்கக்கூடிய திட்டங்கள்/கட்டமைப்புகளுக்கான உள்ளமைக்கப்பட்ட தீம் "
 "மின்னாக்கிகள்."
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 msgid "Shell Engine"
 msgstr "ஷெல் (Shell) இயந்திரம்"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 msgid "Generates GNOME Shell theme based on current preset"
 msgstr "தற்போதைய முன்னமைவின் அடிப்படையில் க்னோம் ஷெல் தீம் உருவாக்குகிறது"
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 msgid "Generates a Material Design 3 palette by extracting colors of an image"
 msgstr ""
 "படத்தின் வண்ணங்களைப் பிரித்தெடுப்பதன் மூலம் மெட்டீரியல் டிசைன் 3 தட்டுகளை "
@@ -1237,19 +1237,19 @@ msgstr "உச்சரிப்பு முன்புற நிறம்"
 msgid "OSD Foreground Color"
 msgstr "OSD முன்புற நிறம்"
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr "K.B.Dharun Krishna https://github.com/kbdharun"
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "பதிப்புரிமை © 2022-2023 கிரேடியன்ஸ் குழு"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "செருகுநிரல்கள் பைய்"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1257,11 +1257,11 @@ msgstr ""
 "GitHub இல் பங்களிப்பாளர்கள் https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "முன்னமைவுகள் பைய்"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

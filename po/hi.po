@@ -31,7 +31,7 @@ msgid "Change the look of Adwaita, with ease"
 msgstr "Adwaita का रूप बदलें, सहजता से"
 
 #: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
-#: gradience/frontend/views/about_window.py:41
+#: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Gradience टीम"
 
@@ -146,7 +146,7 @@ msgstr "लॉग आउट"
 msgid "Log out to allow changes to take effect."
 msgstr "परिवर्तनों को प्रभावी बनाने के लिए लॉग आउट करें।"
 
-#: data/ui/monet_theming_group.blp:5 data/ui/preferences_window.blp:113
+#: data/ui/monet_theming_group.blp:5 data/ui/preferences_dialog.blp:113
 msgid "Monet Engine"
 msgstr "मोनेट इंजन"
 
@@ -215,33 +215,33 @@ msgstr "प्लगइन टॉगल करें"
 msgid "Remove Plugin"
 msgstr "प्लगइन हटाएं"
 
-#: data/ui/preferences_window.blp:5 data/ui/window.blp:128
+#: data/ui/preferences_dialog.blp:5 data/ui/window.blp:128
 msgid "Preferences"
 msgstr "प्राथमिकताएं"
 
-#: data/ui/preferences_window.blp:11
+#: data/ui/preferences_dialog.blp:11
 msgid "General"
 msgstr "सामान्य"
 
-#: data/ui/preferences_window.blp:15
+#: data/ui/preferences_dialog.blp:15
 msgid "Flatpak Applications"
 msgstr "Flatpak अनुप्रयोग"
 
-#: data/ui/preferences_window.blp:18
+#: data/ui/preferences_dialog.blp:18
 msgid "Theme sandboxed GTK 4 apps"
 msgstr "थीम सैंडबॉक्स्ड GTK 4 ऐप्स"
 
-#: data/ui/preferences_window.blp:19
+#: data/ui/preferences_dialog.blp:19
 msgid "Allow GTK 4 Flatpak apps of current user to access custom themes"
 msgstr ""
 "मौजूदा उपयोगकर्ता के GTK 4 Flatpak ऐप्स को तदनुकूल थीम तक पहुंचने की अनुमति "
 "दें"
 
-#: data/ui/preferences_window.blp:28
+#: data/ui/preferences_dialog.blp:28
 msgid "Theme sandboxed GTK 4 apps (System)"
 msgstr "थीम सैंडबॉक्स्ड GTK 4 ऐप्स (सिस्टम)"
 
-#: data/ui/preferences_window.blp:29
+#: data/ui/preferences_dialog.blp:29
 msgid ""
 "Allow GTK 4 Flatpak apps of all users to access custom themes "
 "(Authentication required)"
@@ -249,21 +249,21 @@ msgstr ""
 "सभी उपयोगकर्ताओं के GTK 4 Flatpak ऐप्स को तदनुकूल थीम तक पहुंचने की अनुमति "
 "दें (प्रमाणीकरण आवश्यक)"
 
-#: data/ui/preferences_window.blp:37
+#: data/ui/preferences_dialog.blp:37
 msgid "Theme sandboxed GTK 3 apps"
 msgstr "थीम सैंडबॉक्स्ड GTK 3 ऐप्स"
 
-#: data/ui/preferences_window.blp:38
+#: data/ui/preferences_dialog.blp:38
 msgid "Allow GTK 3 Flatpak apps of current user to access adw-gtk3 theme"
 msgstr ""
 "वर्तमान उपयोगकर्ता के GTK 3 Flatpak ऐप्स को adw-gtk3 थीम तक पहुंचने की अनुमति"
 " दें"
 
-#: data/ui/preferences_window.blp:47
+#: data/ui/preferences_dialog.blp:47
 msgid "Theme sandboxed GTK 3 apps (System)"
 msgstr "थीम सैंडबॉक्स्ड GTK 3 ऐप्स (सिस्टम)"
 
-#: data/ui/preferences_window.blp:48
+#: data/ui/preferences_dialog.blp:48
 msgid ""
 "Allow GTK 3 Flatpak apps of all users to access adw-gtk3 theme "
 "(Authentication required)"
@@ -271,35 +271,35 @@ msgstr ""
 "सभी उपयोगकर्ताओं के GTK 3 Flatpak ऐप्स को adw-gtk3 थीम तक पहुंचने की अनुमति "
 "दें (प्रमाणीकरण आवश्यक)"
 
-#: data/ui/preferences_window.blp:58
+#: data/ui/preferences_dialog.blp:58
 msgid "Preset Fetching"
 msgstr "प्रीसेट लाया जा रहा है"
 
-#: data/ui/preferences_window.blp:60
+#: data/ui/preferences_dialog.blp:60
 msgid "Use an alternative server for fetching presets"
 msgstr "प्रीसेट लाने के लिए वैकल्पिक सर्वर का उपयोग करें"
 
-#: data/ui/preferences_window.blp:61
+#: data/ui/preferences_dialog.blp:61
 msgid "Use JSDelivr instead of directly fetching presets from GitHub"
 msgstr "GitHub से सीधे प्रीसेट लाने के बजाय JSDelivr का उपयोग करें"
 
-#: data/ui/preferences_window.blp:73
+#: data/ui/preferences_dialog.blp:73
 msgid "Custom Preset Repositories"
 msgstr "तदनुकूल प्रीसेट रिपॉजिटरी"
 
-#: data/ui/preferences_window.blp:76
+#: data/ui/preferences_dialog.blp:76
 msgid "Custom repository URL address"
 msgstr "तदनुकूल रिपॉजिटरी URL पता"
 
-#: data/ui/preferences_window.blp:96
+#: data/ui/preferences_dialog.blp:96
 msgid "Theming"
 msgstr "थीमिंग"
 
-#: data/ui/preferences_window.blp:100
+#: data/ui/preferences_dialog.blp:100
 msgid "Theme Engines"
 msgstr "थीम इंजन"
 
-#: data/ui/preferences_window.blp:101
+#: data/ui/preferences_dialog.blp:101
 msgid ""
 "Theme Engines are the built-in theme generators for various customizable "
 "programs/frameworks."
@@ -307,15 +307,15 @@ msgstr ""
 "थीम इंजन विभिन्न अनुकूलन योग्य कार्यक्रमों/ढांचे के लिए अंतर्निहित थीम जेनरे"
 "टर हैं।"
 
-#: data/ui/preferences_window.blp:104 data/ui/shell_theming_group.blp:5
+#: data/ui/preferences_dialog.blp:104 data/ui/shell_theming_group.blp:5
 msgid "Shell Engine"
 msgstr "शैल इंजन"
 
-#: data/ui/preferences_window.blp:105
+#: data/ui/preferences_dialog.blp:105
 msgid "Generates GNOME Shell theme based on current preset"
 msgstr "वर्तमान प्रीसेट के आधार पर GNOME शैल थीम उत्पन्न करता है"
 
-#: data/ui/preferences_window.blp:114
+#: data/ui/preferences_dialog.blp:114
 msgid "Generates a Material Design 3 palette by extracting colors of an image"
 msgstr "किसी छवि के रंग निकालकर एक मटेरियल डिजाइन 3 पैलेट तैयार करता है"
 
@@ -1232,19 +1232,19 @@ msgstr "एक्सेंट अग्रभूमि रंग"
 msgid "OSD Foreground Color"
 msgstr "OSD अग्रभूमि रंग"
 
-#: gradience/frontend/views/about_window.py:27
+#: gradience/frontend/views/about_dialog.py:27
 msgid "translator-credits"
 msgstr "Scrambled777 &lt;weblate.scrambled777@simplelogin.com&gt;"
 
-#: gradience/frontend/views/about_window.py:56
+#: gradience/frontend/views/about_dialog.py:56
 msgid "Copyright © 2022-2023 Gradience Team"
 msgstr "कॉपीराइट © 2022-2023 Gradience टीम"
 
-#: gradience/frontend/views/about_window.py:63
+#: gradience/frontend/views/about_dialog.py:63
 msgid "Plugins by"
 msgstr "इनके द्वारा प्लगइन्स"
 
-#: gradience/frontend/views/about_window.py:65
+#: gradience/frontend/views/about_dialog.py:65
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
@@ -1252,11 +1252,11 @@ msgstr ""
 "GitHub पर योगदानकर्ता https://github.com/GradienceTeam/Plugins/graphs/"
 "contributors"
 
-#: gradience/frontend/views/about_window.py:69
+#: gradience/frontend/views/about_dialog.py:69
 msgid "Presets by"
 msgstr "इनके द्वारा प्रीसेट"
 
-#: gradience/frontend/views/about_window.py:71
+#: gradience/frontend/views/about_dialog.py:71
 msgid ""
 "Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
 "contributors"

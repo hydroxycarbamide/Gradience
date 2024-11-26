@@ -34,10 +34,10 @@ from gradience.backend.constants import rootdir, app_id, rel_ver
 
 from gradience.frontend.views.main_window import GradienceMainWindow
 from gradience.frontend.views.plugins_list_mock import GradiencePluginsList
-from gradience.frontend.views.about_window import GradienceAboutWindow
+from gradience.frontend.views.about_dialog import GradienceAboutDialog
 from gradience.frontend.views.welcome_window import GradienceWelcomeWindow
 from gradience.frontend.views.presets_manager_window import GradiencePresetWindow
-from gradience.frontend.views.preferences_window import GradiencePreferencesWindow
+from gradience.frontend.views.preferences_dialog import GradiencePreferencesDialog
 
 from gradience.frontend.dialogs.app_type_dialog import GradienceAppTypeDialog
 from gradience.frontend.dialogs.save_dialog import GradienceSaveDialog
@@ -155,7 +155,7 @@ class GradienceApplication(Adw.Application):
                         self.win.switch_to_advanced_page, ["<alt>3"])
 
         self.actions.create_action("about",
-                        self.show_about_window)
+                        self.show_about_dialog)
 
         self.load_preset_from_css()
         self.reload_user_defined_presets()
@@ -614,11 +614,11 @@ class GradienceApplication(Adw.Application):
             )
 
     def show_preferences(self, *_args):
-        prefs = GradiencePreferencesWindow(self.win)
-        prefs.present()
+        prefs = GradiencePreferencesDialog(self.win)
+        prefs.present(self.win)
 
-    def show_about_window(self, *_args):
-        about = GradienceAboutWindow(self.win)
+    def show_about_dialog(self, *_args):
+        about = GradienceAboutDialog(self.win)
         about.show_about()
 
     def update_custom_css_text(self, app_type, new_value):
