@@ -46,16 +46,9 @@ class GradienceMonetThemingGroup(Adw.PreferencesGroup):
 
         self.monet_image_file = None
 
-        self.setup_signals()
         self.setup()
 
-    def setup_signals(self):
-        self.monet_file_chooser.connect(
-            "response", self.on_monet_file_chooser_response)
-
     def setup(self):
-        self.monet_file_chooser.set_transient_for(self.parent)
-
         self.setup_palette_shades()
         #self.setup_tone_row()
         self.setup_theme_row()
@@ -143,17 +136,12 @@ class GradienceMonetThemingGroup(Adw.PreferencesGroup):
 
     @Gtk.Template.Callback()
     def on_file_chooser_button_clicked(self, *_args):
-        self.monet_file_chooser.show()
+        self.monet_file_chooser.open(self.parent, None, self.on_monet_file_chooser_response)
 
-    def on_monet_file_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.ACCEPT:
-            self.monet_image_file = self.monet_file_chooser.get_file()
-            image_basename = self.monet_image_file.get_basename()
-            self.monet_file_chooser_button.set_label(image_basename)
-            self.monet_file_chooser_button.set_tooltip_text(image_basename)
-
-        self.monet_file_chooser.hide()
-
-        if response == Gtk.ResponseType.ACCEPT:
-            self.monet_image_file = self.monet_image_file.get_path()
-            self.on_apply_button_clicked()
+    def on_monet_file_chooser_response(self, widget, result):
+        file = self.monet_file_chooser.open_finish(result)
+        image_basename = file.get_basename()
+        self.monet_file_chooser_button.set_label(image_basename)
+        self.monet_file_chooser_button.set_tooltip_text(image_basename)
+        self.monet_image_file = file.get_path()
+        self.on_apply_button_clicked()
