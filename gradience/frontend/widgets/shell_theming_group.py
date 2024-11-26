@@ -183,7 +183,7 @@ class GradienceShellThemingGroup(Adw.PreferencesGroup):
 
     def _on_shell_theme_done(self, source_widget:GObject.Object,
                     result:Gio.AsyncResult, user_data:GObject.GPointer):
-        logging.debug("It works! \o/")
+        logging.debug("It works!")
         self.toast_overlay.add_toast(
             Adw.Toast(title=_("Shell theme applied successfully."))
         )

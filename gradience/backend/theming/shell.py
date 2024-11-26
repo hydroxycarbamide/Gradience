@@ -39,7 +39,7 @@ logging = Logger(logger_name="ShellTheme")
 
 class ShellTheme:
     # Supported GNOME Shell versions: 42, 43, 44
-    shell_versions = [42, 43, 44, 45]
+    shell_versions = [42, 43, 44, 45, 47]
     shell_versions_str = ", ".join(map(str, shell_versions))
     version_target = None
 
@@ -225,6 +225,9 @@ class ShellTheme:
 
     # TODO: Add recoloring for other assets
     def _recolor_assets(self):
+        if self.version_target >= 47:
+            return
+
         accent_bg = self.preset_variables["accent_bg_color"]
 
         switch_on_source = os.path.join(self.source_dir, "toggle-on.svg")
