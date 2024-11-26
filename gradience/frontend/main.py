@@ -521,7 +521,7 @@ class GradienceApplication(Adw.Application):
         )
 
         dialog.connect("response", self.apply_color_scheme)
-        dialog.present()
+        dialog.present(self.win)
 
     def show_save_preset_dialog(self, *_args):
         dialog = GradienceSaveDialog(self.win, path=os.path.join(

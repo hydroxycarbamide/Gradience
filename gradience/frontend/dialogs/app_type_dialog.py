@@ -22,7 +22,7 @@ from gradience.backend.constants import rootdir
 
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/app_type_dialog.ui")
-class GradienceAppTypeDialog(Adw.MessageDialog):
+class GradienceAppTypeDialog(Adw.AlertDialog):
     __gtype_name__ = "GradienceAppTypeDialog"
 
     gtk4_app_type = Gtk.Template.Child("gtk4-app-type")
@@ -38,8 +38,6 @@ class GradienceAppTypeDialog(Adw.MessageDialog):
             self.win = self.parent
         else:
             self.win = self.app.get_active_window()
-
-        self.set_transient_for(self.win)
 
         self.set_heading(heading)
         self.set_body(body)
