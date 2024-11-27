@@ -537,7 +537,7 @@ class GradienceApplication(Adw.Application):
         preset_entry.connect("changed", self.on_save_preset_entry_change, dialog, preset_entry)
         dialog.connect("response", self.on_save_dialog_response, preset_entry)
 
-        dialog.present()
+        dialog.present(self.win)
 
     def construct_unsaved_dialog(self, *_args):
         dialog = GradienceSaveDialog(

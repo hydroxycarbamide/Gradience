@@ -24,7 +24,7 @@ from gradience.backend.constants import rootdir
 # TODO: Make this dialog async when Libadwaita 1.3 becomes available \
 # https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/method.MessageDialog.choose.html
 @Gtk.Template(resource_path=f"{rootdir}/ui/save_dialog.ui")
-class GradienceSaveDialog(Adw.MessageDialog):
+class GradienceSaveDialog(Adw.AlertDialog):
     __gtype_name__ = "GradienceSaveDialog"
 
     preset_entry = Gtk.Template.Child("preset-entry")
@@ -44,8 +44,6 @@ class GradienceSaveDialog(Adw.MessageDialog):
             self.win = self.parent
         else:
             self.win = self.app.get_active_window()
-
-        self.set_transient_for(self.win)
 
         if heading:
             self.heading = heading
