@@ -35,6 +35,9 @@ class GradienceOptionRow(Adw.ActionRow):
     explanation_button = Gtk.Template.Child("explanation-button")
     explanation_label = Gtk.Template.Child("explanation-label")
 
+    is_color_updating = False
+    is_text_updating = False
+
     def __init__(self, name, title, explanation=None, adw_gtk3_support=None, update_var=None, **kwargs):
         super().__init__(**kwargs)
 
@@ -43,6 +46,14 @@ class GradienceOptionRow(Adw.ActionRow):
         self.set_name(name)
         self.set_title(title)
         self.set_subtitle("@" + name)
+
+        dialog_standard = Gtk.ColorDialog(
+            title="Select a color",
+            modal=True,
+            with_alpha=True,
+        )
+
+        self.color_value.set_dialog(dialog_standard)
 
         if adw_gtk3_support == "yes" or not adw_gtk3_support:
             self.warning_button.set_visible(False)
@@ -65,10 +76,13 @@ class GradienceOptionRow(Adw.ActionRow):
         self.update_var = update_var
 
     def connect_signals(self, update_vars):
-        self.color_value.connect("color-set", self.on_color_value_changed, update_vars)
+        self.color_value.connect("notify::rgba", lambda *_: self.on_color_value_changed(update_vars))
         self.text_value.connect("changed", self.on_text_value_changed, update_vars)
 
-    def on_color_value_changed(self, _unused, update_vars, *_args):
+    def on_color_value_changed(self, update_vars):
+        if (self.is_text_updating):
+            return
+
         color_value = self.color_value.get_rgba().to_string()
 
         if color_value.startswith("rgb") or color_value.startswith("rgba"):
@@ -76,16 +90,25 @@ class GradienceOptionRow(Adw.ActionRow):
             if not alpha:
                 color_value = color_hex
 
+        self.is_color_updating = True;
         self.update_value(
             color_value, update_from="color_value", update_vars=update_vars
         )
+        self.is_color_updating = False;
+
 
     def on_text_value_changed(self, _unused, update_vars, *_args):
+        if (self.is_color_updating):
+            return
+
         color_value = self.text_value.get_text()
 
+        self.is_text_updating = True;
         self.update_value(
             color_value, update_from="text_value", update_vars=update_vars
         )
+        self.is_text_updating = False;
+
 
     @Gtk.Template.Callback()
     def on_text_value_toggled(self, *_args):
@@ -118,7 +141,7 @@ class GradienceOptionRow(Adw.ActionRow):
                 self.color_value.set_tooltip_text(_("Not a color, see text value"))
 
         if update_vars == True:
-            if is_app_ready and kwargs.get("update_from") == "text_value" and new_value != "":
+            if is_app_ready and new_value != "":
                 if self.update_var:
                     self.update_var[self.get_name()] = new_value
                 else:

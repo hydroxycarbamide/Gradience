@@ -57,7 +57,7 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
             )
             self.custom_colors_group.add(pref_variable)
 
-            pref_variable.color_value.connect("color-set", self.on_color_value_changed, pref_variable)
+            pref_variable.color_value.connect("notify::rgba", lambda *_: self.on_color_value_changed(pref_variable.color_value))
             pref_variable.text_value.connect("changed", self.on_text_value_changed, pref_variable)
 
             self.set_colors(pref_variable, variable)
@@ -76,7 +76,8 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
         else:
             widget.update_value(self.shell_colors[variable["name"]])
 
-    def on_color_value_changed(self, widget, parent, *_args):
+    # TODO: inputs syncing like option_row
+    def on_color_value_changed(self, widget):
         color_name = parent.props.name
         color_value = widget.get_rgba().to_string()
 
