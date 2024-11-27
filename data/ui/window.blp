@@ -44,8 +44,9 @@ template $GradienceMainWindow : Adw.ApplicationWindow {
         }
 
         [title]
-        Adw.ViewSwitcherTitle title {
+        Adw.ViewSwitcher title {
           stack: view_stack;
+          policy: wide;
         }
 
         [end]
@@ -109,7 +110,6 @@ template $GradienceMainWindow : Adw.ApplicationWindow {
 
         Adw.ViewSwitcherBar {
           stack: view_stack;
-          reveal: bind title.title-visible;
         }
       }
     }
