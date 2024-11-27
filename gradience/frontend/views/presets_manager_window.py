@@ -21,7 +21,7 @@ import shutil
 import json
 
 from pathlib import Path
-from gi.repository import Gtk, Adw, GLib
+from gi.repository import Gtk, Adw, GLib, Gio
 
 from gradience.backend.utils.networking import get_preset_repos
 
@@ -54,6 +54,7 @@ class GradiencePresetWindow(Adw.Window):
 
     all_filter = Gtk.Template.Child()
     json_filter = Gtk.Template.Child()
+    filters = Gio.ListStore()
 
     remove_button = Gtk.Template.Child("remove_button")
     report_button = Gtk.Template.Child("report_button")
@@ -86,23 +87,16 @@ class GradiencePresetWindow(Adw.Window):
 
         self.preset_repos = get_preset_repos(self.settings.get_boolean("use-jsdelivr"))
 
+        self.filters.append(self.json_filter)
+        self.filters.append(self.all_filter)
+        self.import_file_chooser.set_filters(self.filters)
+
         self.setup_signals()
-        self.setup()
 
         self.setup_builtin_presets()
         self.setup_repos()
         self.setup_user_presets()
         self.setup_explore()
-
-    def setup(self):
-        self.import_file_chooser.set_transient_for(self)
-        self.import_file_chooser.set_action(Gtk.FileChooserAction.OPEN)
-
-        self.import_file_chooser.add_filter(self.all_filter)
-        self.import_file_chooser.add_filter(self.json_filter)
-
-        self.import_file_chooser.connect(
-            "response", self.on_file_chooser_response)
 
     def setup_signals(self):
         self.search_entry.connect("search-changed", self.on_search_changed)
@@ -282,36 +276,33 @@ class GradiencePresetWindow(Adw.Window):
 
     @Gtk.Template.Callback()
     def on_import_button_clicked(self, *_args):
-        self.import_file_chooser.show()
+        self.import_file_chooser.open(self.parent, None, self.on_file_chooser_response)
 
-    def on_file_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.ACCEPT:
-            self.preset_path = widget.get_file()
-            preset_file = self.preset_path.get_basename()
-        widget.hide()
+    def on_file_chooser_response(self, widget, result):
+        self.preset_path = self.import_file_chooser.open_finish(result)
+        preset_file = self.preset_path.get_basename()
 
-        if response == Gtk.ResponseType.ACCEPT:
-            if preset_file.endswith(".json"):
+        if preset_file.endswith(".json"):
 
-                if preset_file in self.custom_presets:
-                    self.toast_overlay.add_toast(
-                        Adw.Toast(title=_("Preset already exists"))
-                    )
-                else:
-                    shutil.copy(
-                        self.preset_path.get_path(),
-                        os.path.join(
-                            presets_dir,
-                            "user",
-                            preset_file,
-                        ),
-                    )
-                    self.toast_overlay.add_toast(
-                        Adw.Toast(title=_("Preset imported")))
-            else:
+            if preset_file in self.custom_presets:
                 self.toast_overlay.add_toast(
-                    Adw.Toast(title=_("Unsupported file format, must be .json"))
+                    Adw.Toast(title=_("Preset already exists"))
                 )
+            else:
+                shutil.copy(
+                    self.preset_path.get_path(),
+                    os.path.join(
+                        presets_dir,
+                        "user",
+                        preset_file,
+                    ),
+                )
+                self.toast_overlay.add_toast(
+                    Adw.Toast(title=_("Preset imported")))
+        else:
+            self.toast_overlay.add_toast(
+                Adw.Toast(title=_("Unsupported file format, must be .json"))
+            )
 
         self.reload_pref_group()
 
