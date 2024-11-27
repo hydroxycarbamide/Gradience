@@ -89,7 +89,6 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
         self.shell_colors[color_name] = color_value
 
     def on_text_value_changed(self, widget, parent, *_args):
-        print(f"text{self.parent}")
         color_name = parent.props.name
         color_value = widget.get_text()
 
