@@ -78,7 +78,7 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
 
     # TODO: inputs syncing like option_row
     def on_color_value_changed(self, widget):
-        color_name = parent.props.name
+        color_name = self.parent.props.name
         color_value = widget.get_rgba().to_string()
 
         if color_value.startswith("rgb") or color_value.startswith("rgba"):
@@ -89,6 +89,7 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
         self.shell_colors[color_name] = color_value
 
     def on_text_value_changed(self, widget, parent, *_args):
+        print(f"text{self.parent}")
         color_name = parent.props.name
         color_value = widget.get_text()
 
