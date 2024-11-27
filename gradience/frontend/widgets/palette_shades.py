@@ -35,11 +35,18 @@ class GradiencePaletteShades(Adw.ActionRow):
 
         self.color_pickers = {}
         for i in range(1, n_shades + 1):
-            picker = Gtk.ColorButton()
+            picker = Gtk.ColorDialogButton()
+            dialog_standard = Gtk.ColorDialog(
+                title="Select a color",
+                modal=True,
+                with_alpha=True,
+            )
+
+            picker.set_dialog(dialog_standard)
             picker.set_name(prefix + str(i))
             picker.set_rgba(Gdk.RGBA(red=0, green=0, blue=0, alpha=0))
             picker.set_valign(Gtk.Align.CENTER)
-            picker.connect("color-set", self.on_color_changed)
+            picker.connect("notify::rgba", lambda *_: self.on_color_changed())
             self.color_pickers[str(i)] = picker
             self.add_suffix(picker)
 
