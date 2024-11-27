@@ -55,10 +55,13 @@ class GradiencePaletteShades(Adw.ActionRow):
             if new_rgba.parse(shades[str(i)]):
                 self.color_pickers[str(i)].set_rgba(new_rgba)
                 self.color_pickers[str(i)].set_tooltip_text(shades[str(i)])
+
             if (
                 Gtk.Application.get_default().is_ready
                 and kwargs.get("update_from") == "color_value"
             ):
+                if not self.prefix in Gtk.Application.get_default().palette:
+                    Gtk.Application.get_default().palette[self.prefix] = {}
                 Gtk.Application.get_default().palette[self.prefix][str(i)] = shades[
                     str(i)
                 ]
