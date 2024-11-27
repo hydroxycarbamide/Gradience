@@ -54,7 +54,6 @@ class GradiencePresetWindow(Adw.Window):
 
     all_filter = Gtk.Template.Child()
     json_filter = Gtk.Template.Child()
-    filters = Gio.ListStore()
 
     remove_button = Gtk.Template.Child("remove_button")
     report_button = Gtk.Template.Child("report_button")
@@ -87,6 +86,7 @@ class GradiencePresetWindow(Adw.Window):
 
         self.preset_repos = get_preset_repos(self.settings.get_boolean("use-jsdelivr"))
 
+        self.filters = Gio.ListStore()
         self.filters.append(self.json_filter)
         self.filters.append(self.all_filter)
         self.import_file_chooser.set_filters(self.filters)
