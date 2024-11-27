@@ -106,7 +106,7 @@ class GradienceShellThemingGroup(Adw.PreferencesGroup):
     @Gtk.Template.Callback()
     def on_custom_colors_button_clicked(self, *_args):
         self.shell_pref_window = GradienceShellPrefsWindow(self.parent, self.shell_colors)
-        self.shell_pref_window.present()
+        self.shell_pref_window.present(self.win)
 
     @Gtk.Template.Callback()
     def on_apply_button_clicked(self, *_args):

@@ -30,7 +30,7 @@ logging = Logger()
 
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/shell_prefs_window.ui")
-class GradienceShellPrefsWindow(Adw.PreferencesWindow):
+class GradienceShellPrefsWindow(Adw.PreferencesDialog):
     __gtype_name__ = "GradienceShellPrefsWindow"
 
     custom_colors_group = Gtk.Template.Child("custom-colors-group")
@@ -43,8 +43,6 @@ class GradienceShellPrefsWindow(Adw.PreferencesWindow):
         self.parent = parent
         self.settings = parent.settings
         self.app = self.parent.get_application()
-
-        self.set_transient_for(self.app.get_active_window())
 
         self.setup()
 
