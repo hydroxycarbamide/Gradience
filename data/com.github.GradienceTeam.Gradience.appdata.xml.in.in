@@ -75,6 +75,14 @@
   </recommends>
 
   <releases>
+    <release version="0.8.0-beta4" date="2024-11-28" type="development">
+      <description translate="no">
+        <p>Gradience 0.8.0-beta4 release is the fourth beta for upcoming major release.</p>
+        <ul>
+          <li>See GitHub releases for more info</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.8.0-beta3" date="2024-11-19" type="development">
       <description translate="no">
         <p>Gradience 0.8.0-beta3 release is the third beta for upcoming major release.</p>
