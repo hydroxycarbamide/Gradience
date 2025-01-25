@@ -61,13 +61,13 @@ class GradienceAboutDialog:
         self.about_dialog.add_credit_section(
             _("Plugins by"),
             [
-                _("Contributors on GitHub https://github.com/GradienceTeam/Plugins/graphs/contributors")
+                _("Contributors on GitHub https://github.com/hydroxycarbamide/Plugins/graphs/contributors")
             ]
         )
         self.about_dialog.add_credit_section(
             _("Presets by"),
             [
-                _("Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/contributors")
+                _("Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/contributors")
             ]
         )
 

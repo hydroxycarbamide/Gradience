@@ -28,70 +28,70 @@ msgstr ""
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:4
-#: data/com.github.GradienceTeam.Gradience.desktop.in.in:3 data/ui/window.blp:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:4
+#: data/com.github.hydroxycarbamide.Gradience.desktop.in.in:3 data/ui/window.blp:5
 msgid "Gradience"
 msgstr "Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:5
 #: data/ui/welcome_window.blp:64
 msgid "Change the look of Adwaita, with ease"
 msgstr "Změňte snadno vzhled Adwaita"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:6
 #: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Tým Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:14
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:14
 msgid ""
 "Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 "
 "theme."
 msgstr ""
 "Gradience je nástroj pro přizpůsobení aplikací Libadwaita a tématu adw-gtk3."
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:15
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:15
 msgid "The main features of Gradience include the following:"
 msgstr "Mezi hlavní vlastnosti Gradience patří:"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:17
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:17
 msgid "🎨️ Changing any color of Adwaita theme"
 msgstr "🎨️ Změna libovolné barvy tématu Adwaita"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:18
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:18
 msgid "🖼️ Applying Material 3 color scheme from wallpaper"
 msgstr "🖼️ Použití barevného schématu Material 3 z tapety"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:19
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:19
 msgid "🎁️ Usage of other users presets"
 msgstr "🎁️ Využití předvoleb ostatních uživatelů"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:20
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:20
 msgid "⚙️ Changing advanced options with CSS"
 msgstr "⚙️ Změna pokročilých možností pomocí CSS"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:21
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:21
 msgid "🧩️ Extending functionality using plugins"
 msgstr "🧩️ Rozšíření funkčnosti pomocí pluginů"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:27
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:27
 msgid "Screenshot of \"Colors\" Tab of Main UI"
 msgstr "Snímek obrazovky záložky \"Barvy\" hlavního uživatelského rozhraní"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:32
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:32
 msgid "Screenshot of \"Monet\" Tab of Main UI"
 msgstr "Snímek obrazovky karty „Monet“ hlavního uživatelského rozhraní"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:37
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:37
 msgid "Screenshot of \"Advanced\" Tab of Main UI"
 msgstr ""
 "Snímek obrazovky se záložkou \"Pokročilé\" hlavního uživatelského rozhraní"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:42
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:42
 msgid "Screenshot of \"Installed\" Tab of Preset Manager"
 msgstr "Snímek obrazovky se záložkou \"Nainstalované\" Správce předvoleb"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:47
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:47
 msgid "Screenshot of \"Explore\" Tab of Preset Manager"
 msgstr "Snímek obrazovky záložky \"Prozkoumat\" Správce předvoleb"
 
@@ -1259,10 +1259,10 @@ msgstr "Předvolby od"
 
 #: gradience/frontend/views/about_dialog.py:71
 msgid ""
-"Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 msgstr ""
-"Přispěvatelé na GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Přispěvatelé na GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 
 #: gradience/frontend/views/main_window.py:204
@@ -1335,7 +1335,7 @@ msgstr "Vestavěné předvolby"
 
 #: gradience/frontend/views/presets_manager_window.py:358
 msgid ""
-"See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a> on Github for more presets."
 msgstr ""
 "Další předvolby najdete <a href=\"https://github.com/GradienceTeam/"
@@ -2235,7 +2235,7 @@ msgstr "Motiv prostředí byl úspěšně resetován."
 
 #, fuzzy
 #~ msgid ""
-#~ "See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+#~ "See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 #~ "Community</a> on Github for more presets"
 #~ msgstr ""
 #~ "Další předvolby najdete <a href=\"https://github.com/GradienceTeam/"

@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-rootdir          = '/com/github/GradienceTeam/Gradience'
+rootdir          = '/com/github/hydroxycarbamide/Gradience'
 datadir          = '@DATA_DIR@'
 pkgdatadir       = '@PKGDATA_DIR@'
 localedir        = '@LOCALE_DIR@'
