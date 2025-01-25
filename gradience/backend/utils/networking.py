@@ -36,8 +36,8 @@ def github_to_jsdelivr_url(github_url: str) -> str:
 
     jsdelivr_url = None
 
-    # https://github.com/GradienceTeam/Community/raw/next/official/builder.json =>
-    # https://cdn.jsdelivr.net/gh/GradienceTeam/Community@next/official/builder.json
+    # https://github.com/hydroxycarbamide/Community/raw/next/official/builder.json =>
+    # https://cdn.jsdelivr.net/gh/hydroxycarbamide/Community@next/official/builder.json
     if "https://github.com" in github_url:
         JSDELIVER_FORMAT = "https://cdn.jsdelivr.net/gh/{user}/{repo}@{branch}/{path}"
         path = urlparse(github_url).path

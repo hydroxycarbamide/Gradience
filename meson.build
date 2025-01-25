@@ -12,13 +12,13 @@ i18n = import('i18n')
 python = import('python')
 
 # Project information
-PROJECT_URL = 'https://github.com/GradienceTeam/Gradience'
-BUGTRACKER_URL = 'https://github.com/GradienceTeam/Gradience/issues'
-HELP_URL = 'https://github.com/GradienceTeam/Gradience/discussions'
-TRANSLATE_URL = 'https://hosted.weblate.org/projects/GradienceTeam/gradience'
+PROJECT_URL = 'https://github.com/hydroxycarbamide/Gradience'
+BUGTRACKER_URL = 'https://github.com/hydroxycarbamide/Gradience/issues'
+HELP_URL = 'https://github.com/hydroxycarbamide/Gradience/discussions'
+TRANSLATE_URL = 'https://hosted.weblate.org/projects/hydroxycarbamide/gradience'
 
 # Constants
-PROJECT_RDNN_NAME = 'com.github.GradienceTeam.Gradience'
+PROJECT_RDNN_NAME = 'com.github.hydroxycarbamide.Gradience'
 
 git_bin = find_program('git', required: false)
 

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gresources>
-  <gresource prefix="/com/github/GradienceTeam/Gradience">
+  <gresource prefix="/com/github/hydroxycarbamide/Gradience">
     <file>presets/adwaita.json</file>
     <file>presets/adwaita-dark.json</file>
     <file>presets/pretty-purple.json</file>
@@ -31,7 +31,7 @@
     <file>images/welcome.svg</file>
     <file>style.css</file>
   </gresource>
-  <gresource prefix="/com/github/GradienceTeam/Gradience/icons/scalable/actions/">
+  <gresource prefix="/com/github/hydroxycarbamide/Gradience/icons/scalable/actions/">
     <file preprocess="xml-stripblanks" alias="adw-gtk3-warning-symbolic.svg">icons/scalable/actions/adw-gtk3-warning-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="bug-symbolic.svg">icons/scalable/actions/bug-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="checkmark-symbolic.svg">icons/scalable/actions/checkmark-symbolic.svg</file>

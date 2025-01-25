@@ -150,7 +150,7 @@ class GradiencePresetRow(Adw.ExpanderRow):
     def on_report_button_clicked(self, *_args):
         Gtk.show_uri(
             self.win,
-            "https://github.com/GradienceTeam/Community/issues/new?assignees=daudix-UFO&labels=bug&template=preset_issue.yml&title=preset%3A+",
+            "https://github.com/hydroxycarbamide/Community/issues/new?assignees=daudix-UFO&labels=bug&template=preset_issue.yml&title=preset%3A+",
             Gdk.CURRENT_TIME
         )
 

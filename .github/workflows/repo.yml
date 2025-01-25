@@ -55,8 +55,8 @@ jobs:
         with:
           #TODO: Publish to flathub as a different name? Or ask to take over the Organisation?
           files: |
-            build-aux/flatpak/com.github.GradienceTeam.Gradience.Devel.json
-            build-aux/flatpak/com.github.GradienceTeam.Gradience.json
+            build-aux/flatpak/com.github.hydroxycarbamide.Gradience.Devel.json
+            build-aux/flatpak/com.github.hydroxycarbamide.Gradience.json
           arch: ${{ matrix.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           upload-bundles: true

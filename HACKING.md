@@ -21,7 +21,7 @@ It can use Flatpak manifests to create a consistent building and running
 environment cross-distro. Thus, it is highly recommended you use it.
 
 1. Download [GNOME Builder](https://flathub.org/apps/details/org.gnome.Builder).
-2. In Builder, click the "Clone Repository" button at the bottom, using `https://github.com/GradienceTeam/Gradience.git` as the URL.
+2. In Builder, click the "Clone Repository" button at the bottom, using `https://github.com/hydroxycarbamide/Gradience.git` as the URL.
 3. Click the build button at the top once the project is loaded.
 
 ### Flatpak Builder
@@ -44,18 +44,18 @@ flatpak install org.gnome.Sdk//47 org.gnome.Platform//47
 
 ##### User installation
 ```shell
-git clone https://github.com/GradienceTeam/Gradience.git
+git clone https://github.com/hydroxycarbamide/Gradience.git
 cd Gradience
 git submodule update --init --recursive
-flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/com.github.GradienceTeam.Gradience.json
+flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/com.github.hydroxycarbamide.Gradience.json
 ```
 
 ##### System installation
 ```shell
-git clone https://github.com/GradienceTeam/Gradience.git
+git clone https://github.com/hydroxycarbamide/Gradience.git
 cd Gradience
 git submodule update --init --recursive
-flatpak-builder --install --system --force-clean repo/ build-aux/flatpak/com.github.GradienceTeam.Gradience.json
+flatpak-builder --install --system --force-clean repo/ build-aux/flatpak/com.github.hydroxycarbamide.Gradience.json
 ```
 
 ### Meson
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 ##### Global installation
 
 ```shell
-git clone https://github.com/GradienceTeam/Gradience.git
+git clone https://github.com/hydroxycarbamide/Gradience.git
 cd Gradience
 git submodule update --init --recursive
 meson setup builddir
@@ -95,7 +95,7 @@ sudo ninja -C builddir install
 ##### Local build (for testing and development purposes)
 
 ```shell
-git clone https://github.com/GradienceTeam/Gradience.git
+git clone https://github.com/hydroxycarbamide/Gradience.git
 cd Gradience
 git submodule update --init --recursive
 meson setup builddir

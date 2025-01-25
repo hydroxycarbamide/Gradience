@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="gradience">
-	<schema id="@APP_ID@" path="/com/github/GradienceTeam/Gradience/">
+	<schema id="@APP_ID@" path="/com/github/hydroxycarbamide/Gradience/">
 		<key name="window-width" type="i">
 			<default>1000</default>
 		</key>
