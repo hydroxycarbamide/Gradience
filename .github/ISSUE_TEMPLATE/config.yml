@@ -6,12 +6,12 @@ contact_links:
   - name: 🔌 Plug-in request
     url: https://github.com/hydroxycarbamide/Plugins/issues/new?assignees=&labels=enhancement%2Cplugin-request&template=plugin_request.yml&title=plug%3A+
     about: Request a plugin for customizing an external application or tool
-  - name: 🚀 GitHub Community
-    url: https://github.com/orgs/hydroxycarbamide/discussions
-    about: Please ask and answer questions here.
-  - name: 📬 Matrix
-    url: https://matrix.to/#/#Gradience:matrix.org
-    about: Chat on matrix.
+#  - name: 🚀 GitHub Community
+#    url: https://github.com/orgs/hydroxycarbamide/discussions
+#    about: Please ask and answer questions here.
+#  - name: 📬 Matrix
+#    url: https://matrix.to/#/#Gradience:matrix.org
+#    about: Chat on matrix.
   - name: 🎁️ Share your presets
     url: https://GitHub.com/hydroxycarbamide/Community
     about: Share your presets and see them in the explore tab
