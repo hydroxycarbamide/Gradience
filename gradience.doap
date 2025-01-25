@@ -11,24 +11,17 @@
      Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 theme.
   </description>
 
-  <homepage rdf:resource="https://gradienceteam.github.io" />
-  <download-page rdf:resource="https://github.com/GradienceTeam/Gradience/releases" />
-  <bug-database rdf:resource="https://github.com/GradienceTeam/Gradience/issues" />
+  <homepage rdf:resource="https://github.com/hydroxycarbamide/Gradience" />
+  <download-page rdf:resource="https://github.com/hydroxycarbamide/Gradience/releases" />
+  <bug-database rdf:resource="https://github.com/hydroxycarbamide/Gradience/issues" />
   
   <programming-language>Python</programming-language>
   
   <maintainer>
     <foaf:Person>
-      <foaf:name>0xMRTT</foaf:name>
-      <foaf:mbox rdf:resource="mailto:0xMRTT@proton.me" />
-      <gnome:userid>0xMRTT</gnome:userid>
-    </foaf:Person>
-  </maintainer>
-
-  <maintainer>
-    <foaf:Person>
-      <foaf:name>Gradience Team</foaf:name>
-      <foaf:mbox rdf:resource="mailto:GradienceTeam@proton.me" />
+      <foaf:name>hydroxycarbamide</foaf:name>
+      <foaf:mbox rdf:resource="mailto:ng.eric@ik.me" />
+      <gnome:userid>hydroxycarbamide</gnome:userid>
     </foaf:Person>
   </maintainer>
 </Project>
