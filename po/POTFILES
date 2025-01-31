@@ -1,6 +1,6 @@
-data/com.github.GradienceTeam.Gradience.appdata.xml.in.in
-data/com.github.GradienceTeam.Gradience.desktop.in.in
-data/com.github.GradienceTeam.Gradience.gschema.xml.in
+data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in
+data/com.github.hydroxycarbamide.Gradience.desktop.in.in
+data/com.github.hydroxycarbamide.Gradience.gschema.xml.in
 data/ui/app_type_dialog.blp
 data/ui/builtin_preset_row.blp
 data/ui/custom_css_group.blp

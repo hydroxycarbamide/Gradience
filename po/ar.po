@@ -27,68 +27,68 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 5.4-dev\n"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:4
-#: data/com.github.GradienceTeam.Gradience.desktop.in.in:3 data/ui/window.blp:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:4
+#: data/com.github.hydroxycarbamide.Gradience.desktop.in.in:3 data/ui/window.blp:5
 msgid "Gradience"
 msgstr "تدرج"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:5
 #: data/ui/welcome_window.blp:64
 msgid "Change the look of Adwaita, with ease"
 msgstr "غيّر مظهر أدوايتا بكل سهولة"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:6
 #: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "فريق «تدرج»"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:14
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:14
 msgid ""
 "Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 "
 "theme."
 msgstr "«تدرج» هي أداة لتخصيص تطبيقات لِبَدوَايتا وسِمة adw-gtk3."
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:15
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:15
 msgid "The main features of Gradience include the following:"
 msgstr "تشمل الميزات الرئيسة ل‍«تدرج» ما يلي:"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:17
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:17
 msgid "🎨️ Changing any color of Adwaita theme"
 msgstr "تغيير أي لون لسمة أدوايتا"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:18
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:18
 msgid "🖼️ Applying Material 3 color scheme from wallpaper"
 msgstr "تطبيق نظام ألوان مَتِيريَل 3 من صورة الخلفية"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:19
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:19
 msgid "🎁️ Usage of other users presets"
 msgstr "استخدام الإعدادات المسبقة لمستخدمين آخرين"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:20
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:20
 msgid "⚙️ Changing advanced options with CSS"
 msgstr "تغيير الخيارات المتقدمة باستخدام سي‌إس‌إس"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:21
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:21
 msgid "🧩️ Extending functionality using plugins"
 msgstr "توسيع التأدية الوظيفية باستخدام الملحقات"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:27
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:27
 msgid "Screenshot of \"Colors\" Tab of Main UI"
 msgstr "لقطة شاشة للسان \"الألوان\" من الواجهة الرئيسة"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:32
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:32
 msgid "Screenshot of \"Monet\" Tab of Main UI"
 msgstr "لقطة شاشة للسان \"مونيه\" في الواجهة الرئيسة"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:37
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:37
 msgid "Screenshot of \"Advanced\" Tab of Main UI"
 msgstr "لقطة شاشة للسان \"خيارات متقدمة\" في الواجهة الرئيسة"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:42
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:42
 msgid "Screenshot of \"Installed\" Tab of Preset Manager"
 msgstr "لقطة شاشة للسان \"مثبَّت\" في مدير الإعدادات المسبقة"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:47
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:47
 msgid "Screenshot of \"Explore\" Tab of Preset Manager"
 msgstr "لقطة شاشة للسان \"استكشف\" في مدير الإعدادات المسبقة"
 
@@ -529,7 +529,7 @@ msgid ""
 "make a pull request and share it with the world!"
 msgstr ""
 "يستخدم «تدرج» جِت.هَب لمشاركة إعدادك المسبق. تحتاج لإنشاء حساب جِت.هَب و نسخ "
-"مستودع <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"مستودع <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a>، بعد ذلك، يمكنك تحميل إعدادك المسبق وتقديم طلب سحب ومشاركته مع "
 "العالم!"
 
@@ -1292,10 +1292,10 @@ msgstr "الإعدادات المسبقة بواسطة"
 
 #: gradience/frontend/views/about_dialog.py:71
 msgid ""
-"Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 msgstr ""
-"المساهمون من جت‌هب https://github.com/GradienceTeam/Community/graphs/"
+"المساهمون من جت‌هب https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 
 #: gradience/frontend/views/main_window.py:204
@@ -1368,10 +1368,10 @@ msgstr "الإعدادات المسبقة المدمجة"
 
 #: gradience/frontend/views/presets_manager_window.py:358
 msgid ""
-"See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a> on Github for more presets."
 msgstr ""
-"راجع <a href=\"https://github.com/GradienceTeam/Community\"> GradienceTeam / "
+"راجع <a href=\"https://github.com/hydroxycarbamide/Community\"> GradienceTeam / "
 "Community </a> على جِت.هَب للحصول على مزيد من الإعدادات المسبقة."
 
 #: gradience/frontend/views/presets_manager_window.py:384
@@ -2186,10 +2186,10 @@ msgstr "صُفِّرت سمة الصدفة."
 #~ msgstr "إعدادات مسبقة مدمجة"
 
 #~ msgid ""
-#~ "See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+#~ "See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 #~ "Community</a> on Github for more presets"
 #~ msgstr ""
-#~ "راجع <a href=\"https://github.com/GradienceTeam/Community\"> "
+#~ "راجع <a href=\"https://github.com/hydroxycarbamide/Community\"> "
 #~ "GradienceTeam / Community </a> على Github للحصول على مزيد من الإعدادات "
 #~ "المسبقة"
 

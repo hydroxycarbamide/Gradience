@@ -46,8 +46,8 @@ preset_repos_github = {
 }
 
 preset_repos_jsdelivr = {
-    "Official": "https://cdn.jsdelivr.net/gh/GradienceTeam/Community@next/official.json",
-    "Curated": "https://cdn.jsdelivr.net/gh/GradienceTeam/Community@next/curated.json"
+    "Official": "https://cdn.jsdelivr.net/gh/hydroxycarbamide/Community@next/official.json",
+    "Curated": "https://cdn.jsdelivr.net/gh/hydroxycarbamide/Community@next/curated.json"
 }
 
 # preset_repos should be dynamically imported depending of user settings

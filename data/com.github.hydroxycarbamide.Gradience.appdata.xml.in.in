@@ -3,11 +3,11 @@
   <id>@APP_ID@</id>
   <name>Gradience</name>
   <summary>Change the look of Adwaita, with ease</summary>
-  <developer_name>Gradience Team</developer_name>
+  <developer_name>Hydroxycarbamide</developer_name>
   <launchable type="desktop-id">@APP_ID@.desktop</launchable>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <update_contact>GradienceTeam@protonmail.com</update_contact>
+  <update_contact>ng.eric@ik.me</update_contact>
   <content_rating type="oars-1.1"/>
 
   <description>

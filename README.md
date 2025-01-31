@@ -4,7 +4,7 @@
 > Some features (such as the plugin manager) won't be maintained as I am not interested in them at the moment.
 
 <h1 align="center">
-  <img src="data/icons/hicolor/scalable/apps/com.github.GradienceTeam.Gradience.svg" alt="Gradience" width="192" height="192"/>
+  <img src="data/icons/hicolor/scalable/apps/com.github.hydroxycarbamide.Gradience.svg" alt="Gradience" width="192" height="192"/>
   <br>
   Gradience
 </h1>
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://flathub.org/apps/details/com.github.GradienceTeam.Gradience">
+  <a href="https://flathub.org/apps/details/com.github.hydroxycarbamide.Gradience">
     <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-i-en.svg"/>
   </a>
   <br>
@@ -26,23 +26,14 @@
   <a href="https://hosted.weblate.org/engage/GradienceTeam">
     <img alt="Translation status" src="https://hosted.weblate.org/widgets/GradienceTeam/-/svg-badge.svg"/>
   </a>
-  <a href="https://github.com/GradienceTeam/Gradience/actions/workflows/build.yml">
-    <img alt="Build status" src="https://github.com/GradienceTeam/Gradience/actions/workflows/build.yml/badge.svg"/>
+  <a href="https://github.com/hydroxycarbamide/Gradience/actions/workflows/build.yml">
+    <img alt="Build status" src="https://github.com/hydroxycarbamide/Gradience/actions/workflows/build.yml/badge.svg"/>
   </a>
   <a href="https://flathub.org/apps/details/com.github.GradienceTeam.Gradience">
     <img alt="Flathub downloads" src="https://img.shields.io/badge/dynamic/json?color=informational&label=downloads&logo=flathub&logoColor=white&query=%24.installs_total&url=https%3A%2F%2Fflathub.org%2Fapi%2Fv2%2Fstats%2Fcom.github.GradienceTeam.Gradience"/>
   </a>
   <a href="https://repology.org/project/gradience/versions">
     <img alt="Packaging status" src="https://repology.org/badge/tiny-repos/gradience.svg">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://matrix.to/#/#Gradience:matrix.org">
-    <img alt="Chat on Matrix" src="https://img.shields.io/matrix/Gradience:matrix.org?color=%230dbd8b&label=Gradience&logo=matrix&logoColor=white"/>
-  </a>
-  <a href="https://discord.com/invite/4njFDtfGEZ">
-    <img alt="Chat on Discord" src="https://dcbadge.vercel.app/api/server/4njFDtfGEZ?style=flat&theme=default-inverted"/>
   </a>
 </p>
 
@@ -220,7 +211,7 @@ First of all, you need to have [GNOME Nightly](https://nightly.gnome.org) Flatpa
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 ```
 
-Then, download the Gradience nightly from [here](https://nightly.link/GradienceTeam/Gradience/workflows/build/main)
+Then, download the Gradience nightly from [here](https://nightly.link/hydroxycarbamide/Gradience/workflows/build/main)
 
 Finally, extract the ZIP and install Gradience by running:
 
@@ -235,7 +226,7 @@ It can use Flatpak manifests to create a consistent building and running
 environment cross-distro. Thus, it is highly recommended you use it.
 
 1. Download [GNOME Builder](https://apps.gnome.org/Builder).
-2. In Builder, click the "Clone Repository" button at the bottom, using `https://github.com/GradienceTeam/Gradience.git` as the URL.
+2. In Builder, click the "Clone Repository" button at the bottom, using `https://github.com/hydroxycarbamide/Gradience.git` as the URL.
 3. Click the build button at the top once the project is loaded.
 
 For more building and installation methods, see [HACKING.md](HACKING.md)
@@ -249,19 +240,19 @@ The following command will make Gradience show welcome screen on next launch, li
 #### Flatpak
 
 ```shell
-flatpak run --command=gsettings com.github.GradienceTeam.Gradience reset com.github.GradienceTeam.Gradience first-run
+flatpak run --command=gsettings com.github.hydroxycarbamide.Gradience reset com.github.hydroxycarbamide.Gradience first-run
 ```
 
 #### Alternative installation methods
 
 ```shell
-gsettings reset com.github.GradienceTeam.Gradience first-run
+gsettings reset com.github.hydroxycarbamide.Gradience first-run
 ```
 
 ## ℹ️ FAQ
 
 ### How can I launch a CLI?
-Refer to [temporary CLI documentation](https://github.com/GradienceTeam/Gradience/wiki/Using-CLI) in repo's wiki for instructions on how to launch a CLI.
+Refer to [temporary CLI documentation](https://github.com/hydroxycarbamide/Gradience/wiki/Using-CLI) in repo's wiki for instructions on how to launch a CLI.
 
 ## 🙌 Contribute to Gradience
 
@@ -269,7 +260,7 @@ See [HACKING.md](HACKING.md)
 
 ## ✨️ Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=GradienceTeam/Gradience)](https://github.com/GradienceTeam/Gradience/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=hydroxycarbamide/Gradience)](https://github.com/hydroxycarbamide/Gradience/graphs/contributors)
 
 ## 🏷️ About the Name
 
@@ -303,9 +294,3 @@ Special thanks to:
 - [Weblate](https://weblate.org) for providing translation platform
 
 This README is based on README from [Kooha](https://github.com/SeaDve/Kooha) by [Dave Patrick Caberto](https://github.com/SeaDve)
-
-## 🪞 Mirrors
-
-- [GitLab](https://gitlab.com/GradienceTeam/Gradience)
-- [GitHub](https://github.com/GradienceTeam/Gradience)
-- [Codeberg](https://codeberg.org/GradienceTeam/Gradience)
