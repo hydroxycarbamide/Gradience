@@ -25,6 +25,7 @@ on:
   pull_request:
     paths-ignore:
       - '**/*.md'
+  workflow_dispatch:
 
 jobs:
   flatpak:
