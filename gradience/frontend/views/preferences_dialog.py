@@ -44,8 +44,7 @@ class GradiencePreferencesDialog(Adw.PreferencesDialog):
     gtk3_user_theming_switch = Gtk.Template.Child()
     gtk3_global_theming_switch = Gtk.Template.Child()
 
-    # TODO: Using a fallback like jsdelivr might be a good idea
-    # jsdelivr_switch = Gtk.Template.Child()
+    jsdelivr_switch = Gtk.Template.Child()
 
     monet_engine_switch = Gtk.Template.Child()
     gnome_shell_engine_switch = Gtk.Template.Child()
@@ -68,7 +67,7 @@ class GradiencePreferencesDialog(Adw.PreferencesDialog):
         self.setup_flatpak_group()
         self.setup_theme_engines_group()
         self.setup_reset_preset_group()
-        # self.setup_jsdelivr()
+        self.setup_jsdelivr()
 
     def setup_reset_preset_group(self):
         self.reset_preset_group = GradienceResetPresetGroup(self)
