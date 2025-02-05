@@ -23,22 +23,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.4-dev\n"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:4
-#: data/com.github.GradienceTeam.Gradience.desktop.in.in:3 data/ui/window.blp:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:4
+#: data/com.github.hydroxycarbamide.Gradience.desktop.in.in:3 data/ui/window.blp:5
 msgid "Gradience"
 msgstr "Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:5
 #: data/ui/welcome_window.blp:64
 msgid "Change the look of Adwaita, with ease"
 msgstr "Modificatz l’aparéncia d’Adwaita facilament"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:6
 #: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "La còla de Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:14
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:14
 msgid ""
 "Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 "
 "theme."
@@ -46,57 +46,57 @@ msgstr ""
 "Gradience es un esplech per personalizar las aplicacions Libadwaita e lo "
 "tèma adw-gtk3."
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:15
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:15
 msgid "The main features of Gradience include the following:"
 msgstr ""
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:17
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:17
 #, fuzzy
 #| msgid "Change any color of Adwaita theme"
 msgid "🎨️ Changing any color of Adwaita theme"
 msgstr "Cambiar quina color que siá del tèma Adwaita"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:18
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:18
 #, fuzzy
 #| msgid "Apply Material 3 colors from wallpaper"
 msgid "🖼️ Applying Material 3 color scheme from wallpaper"
 msgstr "Aplicar las colors Material 3 a partir d’un rèireplan"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:19
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:19
 #, fuzzy
 #| msgid "Use other users presets"
 msgid "🎁️ Usage of other users presets"
 msgstr "Utilizar los prereglatges d’autres utilizaires"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:20
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:20
 #, fuzzy
 #| msgid "Change advanced options with CSS"
 msgid "⚙️ Changing advanced options with CSS"
 msgstr "Modificar las opcions avançadas amb CSS"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:21
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:21
 #, fuzzy
 #| msgid "Extend functionality using plugins"
 msgid "🧩️ Extending functionality using plugins"
 msgstr "Espandir las foncionalitats amb de plugins"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:27
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:27
 msgid "Screenshot of \"Colors\" Tab of Main UI"
 msgstr ""
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:32
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:32
 msgid "Screenshot of \"Monet\" Tab of Main UI"
 msgstr ""
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:37
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:37
 msgid "Screenshot of \"Advanced\" Tab of Main UI"
 msgstr ""
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:42
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:42
 msgid "Screenshot of \"Installed\" Tab of Preset Manager"
 msgstr ""
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:47
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:47
 msgid "Screenshot of \"Explore\" Tab of Preset Manager"
 msgstr ""
 
@@ -1314,7 +1314,7 @@ msgstr "Prereglatges"
 
 #: gradience/frontend/views/about_dialog.py:71
 msgid ""
-"Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 msgstr ""
 
@@ -1387,7 +1387,7 @@ msgstr "Configuracions predefinidas"
 
 #: gradience/frontend/views/presets_manager_window.py:358
 msgid ""
-"See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a> on Github for more presets."
 msgstr ""
 

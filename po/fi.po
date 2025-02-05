@@ -23,22 +23,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:4
-#: data/com.github.GradienceTeam.Gradience.desktop.in.in:3 data/ui/window.blp:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:4
+#: data/com.github.hydroxycarbamide.Gradience.desktop.in.in:3 data/ui/window.blp:5
 msgid "Gradience"
 msgstr "Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:5
 #: data/ui/welcome_window.blp:64
 msgid "Change the look of Adwaita, with ease"
 msgstr "Muuta Adwaitan ulkoasua vaivatta"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:6
 #: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Gradience-tiimi"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:14
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:14
 msgid ""
 "Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 "
 "theme."
@@ -46,55 +46,55 @@ msgstr ""
 "Gradience on työkalu, jolla on mahdollista muokata Libadwaita-sovelluksia ja "
 "adw-gtk3-teemaa."
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:15
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:15
 msgid "The main features of Gradience include the following:"
 msgstr "Gradiencen keskeisimmät ominaisuudet:"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:17
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:17
 msgid "🎨️ Changing any color of Adwaita theme"
 msgstr "🎨️ Muuta mitä tahansa Adwaita-teeman väriä"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:18
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:18
 msgid "🖼️ Applying Material 3 color scheme from wallpaper"
 msgstr "🖼️ Toteuta Material 3 -värejä taustakuvasta"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:19
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:19
 msgid "🎁️ Usage of other users presets"
 msgstr "🎁️ Käytä muiden käyttäjien tekemiä esiasetuksia"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:20
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:20
 msgid "⚙️ Changing advanced options with CSS"
 msgstr "⚙️ Muuta edistyneitä valintoja CSS:llä"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:21
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:21
 msgid "🧩️ Extending functionality using plugins"
 msgstr "🧩️ Laajenna toiminnallisuutta käyttämällä liitännäisiä"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:27
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:27
 #, fuzzy
 #| msgid "Screenshot of \"Colors\" Tab"
 msgid "Screenshot of \"Colors\" Tab of Main UI"
 msgstr "Värit-välilehden kuvakaappaus"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:32
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:32
 #, fuzzy
 #| msgid "Screenshot of \"Monet\" Tab"
 msgid "Screenshot of \"Monet\" Tab of Main UI"
 msgstr "Monet-välilehden kuvakaappaus"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:37
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:37
 #, fuzzy
 #| msgid "Screenshot of \"Advanced\" Tab"
 msgid "Screenshot of \"Advanced\" Tab of Main UI"
 msgstr "Lisäasetukset-välilehden kuvakaappaus"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:42
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:42
 #, fuzzy
 #| msgid "Screenshot of \"Advanced\" Tab"
 msgid "Screenshot of \"Installed\" Tab of Preset Manager"
 msgstr "Lisäasetukset-välilehden kuvakaappaus"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:47
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:47
 #, fuzzy
 #| msgid "Screenshot of \"Colors\" Tab"
 msgid "Screenshot of \"Explore\" Tab of Preset Manager"
@@ -1335,10 +1335,10 @@ msgstr "Esiasetukset"
 
 #: gradience/frontend/views/about_dialog.py:71
 msgid ""
-"Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 msgstr ""
-"Avustajat GitHubissa https://github.com/GradienceTeam/Community/graphs/"
+"Avustajat GitHubissa https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 
 #: gradience/frontend/views/main_window.py:204
@@ -1411,7 +1411,7 @@ msgstr "Sisäänrakennetut esiasetukset"
 
 #: gradience/frontend/views/presets_manager_window.py:358
 msgid ""
-"See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a> on Github for more presets."
 msgstr ""
 "Katso Githubista <a href=\"https://github.com/GradienceTeam/"
@@ -1986,7 +1986,7 @@ msgstr ""
 #~ msgstr "Sisäänrakennetut esiasetukset"
 
 #~ msgid ""
-#~ "See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+#~ "See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 #~ "Community</a> on Github for more presets"
 #~ msgstr ""
 #~ "Katso Githubista <a href=\"https://github.com/GradienceTeam/"

@@ -20,22 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.6-dev\n"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:4
-#: data/com.github.GradienceTeam.Gradience.desktop.in.in:3 data/ui/window.blp:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:4
+#: data/com.github.hydroxycarbamide.Gradience.desktop.in.in:3 data/ui/window.blp:5
 msgid "Gradience"
 msgstr "Gradience"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:5
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:5
 #: data/ui/welcome_window.blp:64
 msgid "Change the look of Adwaita, with ease"
 msgstr "Adwaita का रूप बदलें, सहजता से"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:6
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:6
 #: gradience/frontend/views/about_dialog.py:41
 msgid "Gradience Team"
 msgstr "Gradience टीम"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:14
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:14
 msgid ""
 "Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 "
 "theme."
@@ -43,47 +43,47 @@ msgstr ""
 "Gradience Libadwaita अनुप्रयोगों और adw-gtk3 थीम को अनुकूलित करने के लिए एक "
 "उपकरण है।"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:15
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:15
 msgid "The main features of Gradience include the following:"
 msgstr "Gradience की मुख्य विशेषताओं में निम्नलिखित शामिल हैं:"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:17
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:17
 msgid "🎨️ Changing any color of Adwaita theme"
 msgstr "🎨️ Adwaita थीम का कोई भी रंग बदलना"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:18
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:18
 msgid "🖼️ Applying Material 3 color scheme from wallpaper"
 msgstr "🖼️ वॉलपेपर से Material 3 कलर स्कीम लगाना"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:19
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:19
 msgid "🎁️ Usage of other users presets"
 msgstr "🎁️ अन्य उपयोगकर्ताओं के प्रीसेट का उपयोग"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:20
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:20
 msgid "⚙️ Changing advanced options with CSS"
 msgstr "⚙️ CSS के साथ उन्नत विकल्पों को बदलना"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:21
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:21
 msgid "🧩️ Extending functionality using plugins"
 msgstr "🧩️ प्लगइन्स का उपयोग करके कार्यक्षमता का विस्तार"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:27
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:27
 msgid "Screenshot of \"Colors\" Tab of Main UI"
 msgstr "मुख्य UI के \"रंग\" टैब का स्क्रीनशॉट"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:32
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:32
 msgid "Screenshot of \"Monet\" Tab of Main UI"
 msgstr "मुख्य UI पर \"मोनेट\" टैब का स्क्रीनशॉट"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:37
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:37
 msgid "Screenshot of \"Advanced\" Tab of Main UI"
 msgstr "मुख्य UI के \"उन्नत\" टैब का स्क्रीनशॉट"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:42
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:42
 msgid "Screenshot of \"Installed\" Tab of Preset Manager"
 msgstr "प्रीसेट मैनेजर के \"स्थापित\" टैब का स्क्रीनशॉट"
 
-#: data/com.github.GradienceTeam.Gradience.appdata.xml.in.in:47
+#: data/com.github.hydroxycarbamide.Gradience.appdata.xml.in.in:47
 msgid "Screenshot of \"Explore\" Tab of Preset Manager"
 msgstr "प्रीसेट मैनेजर के \"अन्वेषण करें\" टैब का स्क्रीनशॉट"
 
@@ -1258,7 +1258,7 @@ msgstr "इनके द्वारा प्रीसेट"
 
 #: gradience/frontend/views/about_dialog.py:71
 msgid ""
-"Contributors on GitHub https://github.com/GradienceTeam/Community/graphs/"
+"Contributors on GitHub https://github.com/hydroxycarbamide/Community/graphs/"
 "contributors"
 msgstr ""
 "GitHub पर योगदानकर्ता https://github.com/GradienceTeam/Cmunity/graphs/"
@@ -1334,7 +1334,7 @@ msgstr "अंतर्निर्मित प्रीसेट"
 
 #: gradience/frontend/views/presets_manager_window.py:358
 msgid ""
-"See <a href=\"https://github.com/GradienceTeam/Community\">GradienceTeam/"
+"See <a href=\"https://github.com/hydroxycarbamide/Community\">GradienceTeam/"
 "Community</a> on Github for more presets."
 msgstr ""
 "अधिक प्रीसेट के लिए Github पर <a href=\"https://github.com/GradienceTeam/"

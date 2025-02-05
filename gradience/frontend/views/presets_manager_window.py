@@ -347,8 +347,8 @@ class GradiencePresetWindow(Adw.Window):
         self.preset_list.set_description(
             _(
                 "See "
-                '<a href="https://github.com/GradienceTeam/Community">'
-                "GradienceTeam/Community</a> on Github for more presets."
+                '<a href="https://github.com/hydroxycarbamide/Community">'
+                "hydroxycarbamide/Community</a> on Github for more presets."
             )
         )
 
