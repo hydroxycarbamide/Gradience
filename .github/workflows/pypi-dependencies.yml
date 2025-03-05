@@ -41,7 +41,7 @@ jobs:
           mv pypi-dependencies.json build-aux/flatpak/pypi-dependencies.json
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v7.0.6
+        uses: peter-evans/create-pull-request@v7.0.8
         with:
           title: "meta: update PyPI dependencies for Flatpak"
           body: "This automated PR contains an auto-generated `pypi-dependencies.json` file used in Flatpak manifests."
