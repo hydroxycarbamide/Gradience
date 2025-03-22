@@ -22,7 +22,7 @@ jobs:
       max-parallel: 1
 
     env:
-      GNOME_VERSION: 47
+      GNOME_VERSION: 48
 
     steps:
       # Checkout a repository with Flatpak manifests
