@@ -64,7 +64,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://git.siklos-chaneru.dev/Siklos/blueprint-compiler.git",
+                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
                     "branch" : "main"
                 }
             ]
