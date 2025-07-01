@@ -32,12 +32,12 @@ It uses Flatpak manifests to download and pack needed dependencies with compiled
 #### Prerequisites
 
 - Flatpak Builder `flatpak-builder`
-- GNOME SDK runtime `org.gnome.Sdk//47`
-- GNOME Platform runtime `org.gnome.Platform//47`
+- GNOME SDK runtime `org.gnome.Sdk//48`
+- GNOME Platform runtime `org.gnome.Platform//48`
 
 Install required runtimes:
 ```shell
-flatpak install org.gnome.Sdk//47 org.gnome.Platform//47
+flatpak install org.gnome.Sdk//48 org.gnome.Platform//48
 ```
 
 #### Build Instruction
