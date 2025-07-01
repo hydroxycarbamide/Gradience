@@ -34,10 +34,10 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          curl -O https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/pip/flatpak-pip-generator
-          chmod +x flatpak-pip-generator
+          curl -O https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/pip/flatpak-pip-generator.py
+          chmod +x flatpak-pip-generator.py
           python -m pip install requirements-parser
-          ./flatpak-pip-generator --requirements-file=requirements.txt --output pypi-dependencies
+          ./flatpak-pip-generator.py --requirements-file=requirements.txt --output pypi-dependencies
           mv pypi-dependencies.json build-aux/flatpak/pypi-dependencies.json
 
       - name: Create pull request
