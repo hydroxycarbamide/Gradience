@@ -433,6 +433,7 @@ $RECYCLE.BIN/
 
 # The flatpak pip generator (needed for CI)
 flatpak-pip-generator
+flatpak-pip-generator.py
 
 # Don't include constants.py in VCS since it's a generated file
 gradience/backend/constants.py
