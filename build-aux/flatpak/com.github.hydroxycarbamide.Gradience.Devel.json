@@ -53,8 +53,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/lxml/lxml/releases/download/lxml-5.0.0-1/lxml-5.0.0.tar.gz",
-                    "sha256" : "67216b13a832adb984cfd20437261236f8c05fc19a0f7d4c59c235fddb17dfdb"
+                    "url" : "https://github.com/lxml/lxml/archive/refs/tags/lxml-6.0.0.tar.gz",
+                    "sha256" : "5560ee7bd3bcea0e64221bbb23f4ee1d222296ef25ba217e327a5f1d963005d9"
                 }
             ]
         },
