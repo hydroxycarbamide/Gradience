@@ -9,7 +9,6 @@ on:
 jobs:
   flatpak:
     name: Flatpak
-    runs-on: ubuntu-latest
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-48
       options: --privileged
