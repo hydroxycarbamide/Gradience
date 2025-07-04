@@ -49,7 +49,7 @@ jobs:
         with:
           submodules: recursive
 
-      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@v6
+      - uses: flathub/flatpak-github-actions/flatpak-builder@v6
         with:
           repository-name: gnome-nightly
           bundle: gradience-devel.flatpak
