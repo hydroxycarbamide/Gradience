@@ -64,7 +64,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+                    "url": "https://github.com/GNOME/blueprint-compiler",
                     "tag" : "v0.18.0"
                 }
             ]
