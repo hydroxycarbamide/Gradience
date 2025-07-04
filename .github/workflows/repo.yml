@@ -35,7 +35,7 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
-      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@v6
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: com.github.hydroxycarbamide.Gradience.flatpak
           manifest-path: build-aux/flatpak/com.github.hydroxycarbamide.Gradience.json
