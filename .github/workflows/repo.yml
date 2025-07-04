@@ -52,15 +52,3 @@ jobs:
           arch: ${{ matrix.variant.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           verbose: true
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: com.github.hydroxycarbamide.Gradience.Devel-${{ matrix.variant.arch }}
-          path: com.github.hydroxycarbamide.Gradience.Devel.flatpak
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: com.github.hydroxycarbamide.Gradience-${{ matrix.variant.arch }}
-          path: com.github.hydroxycarbamide.Gradience.flatpak
