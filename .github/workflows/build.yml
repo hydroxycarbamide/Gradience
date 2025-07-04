@@ -48,7 +48,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@master
+
+      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@v6
         with:
           repository-name: gnome-nightly
           bundle: gradience-devel.flatpak
