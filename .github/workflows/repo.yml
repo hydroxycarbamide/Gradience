@@ -44,7 +44,7 @@ jobs:
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           verbose: true
 
-      - uses: flathub/flatpak-github-actions/flatpak-builder@v6
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: com.github.hydroxycarbamide.Gradience.Devel.flatpak
           manifest-path: build-aux/flatpak/com.github.hydroxycarbamide.Gradience.Devel.json
