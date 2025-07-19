@@ -49,7 +49,6 @@ jobs:
           repository-name: gnome-nightly
           bundle: com.github.hydroxycarbamide.Gradience.Devel.flatpak
           manifest-path: build-aux/flatpak/com.github.hydroxycarbamide.Gradience.Devel.json
-          cache-key: flatpak-builder-${{ github.sha }}
           arch: ${{ matrix.variant.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           verbose: true
