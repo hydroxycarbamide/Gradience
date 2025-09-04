@@ -19,10 +19,11 @@
 import re
 
 from gradience.backend.globals import adw_palette_prefixes
+from gradience.backend.utils.theming import theming_warning_start, theming_warning_end
 
 
 # Regular expressions
-define_color = re.compile(r"(@define-color .*[^\s])")
+define_color = re.compile(r"(@define-color .*[^\\s])")
 not_define_color = re.compile(r"(^(?:(?!@define-color).)*$)")
 
 def parse_css(path):
@@ -34,7 +35,9 @@ def parse_css(path):
         palette[color] = {}
 
     with open(path, "r", encoding="utf-8") as sheet:
-        for line in sheet:
+        content = sheet.read()
+        content = content.replace(theming_warning_start, "").replace(theming_warning_end, "")
+        for line in content.splitlines():
             cdefine_match = re.search(define_color, line)
             not_cdefine_match = re.search(not_define_color, line)
             if cdefine_match != None: # If @define-color variable declarations were found

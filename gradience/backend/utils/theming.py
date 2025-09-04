@@ -19,12 +19,7 @@
 from gradience.backend.models.preset import Preset
 
 
-def generate_gtk_css(app_type: str, preset: Preset) -> str:
-    variables = preset.variables
-    palette = preset.palette
-    custom_css = preset.custom_css
-
-    theming_warning = """/*
+theming_warning_start = """/*
 Generated with Gradience
 
 Issues caused by theming should be reported to Gradience repository, and not to upstream
@@ -34,7 +29,17 @@ https://github.com/hydroxycarbamide/Gradience
 
 """
 
-    gtk_css = ""
+theming_warning_end = """/*
+Generated with Gradience end
+*/
+"""
+
+def generate_gtk_css(app_type: str, preset: Preset) -> str:
+    variables = preset.variables
+    palette = preset.palette
+    custom_css = preset.custom_css
+
+    gtk_css = theming_warning_start
 
     for key in variables.keys():
         gtk_css += f"@define-color {key} {variables[key]};\n"
@@ -43,8 +48,8 @@ https://github.com/hydroxycarbamide/Gradience
         for key in palette[prefix_key].keys():
             gtk_css += f"@define-color {prefix_key + key} {palette[prefix_key][key]};\n"
 
+    gtk_css += theming_warning_end
+
     gtk_css += custom_css.get(app_type, "")
 
-    final_css = theming_warning + gtk_css
-
-    return final_css
+    return gtk_css
