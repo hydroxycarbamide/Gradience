@@ -423,6 +423,7 @@ class GradienceApplication(Adw.Application):
 
     def reload_variables(self):
         parsing_errors = []
+        logging.debug(f"Reload variables: {vars(self.preset)}")
         gtk_css = generate_gtk_css("gtk4", self.preset)
         css_provider = Gtk.CssProvider()
 
