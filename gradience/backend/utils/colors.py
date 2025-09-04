@@ -76,6 +76,26 @@ def argb_to_color_code(argb, alpha=None) -> str:
 
     return rgba_base.format(red, green, blue, alpha)
 
+def adjust_brightness(argb, factor: float, alpha=None) -> int:
+    """
+    Adjust the brightness of an ARGB color.
+
+    Returns a new ARGB integer which can be passed to argb_to_color_code.
+    """
+    red = redFromArgb(argb)
+    green = greenFromArgb(argb)
+    blue = blueFromArgb(argb)
+    if alpha is None:
+        alpha = alphaFromArgb(argb)
+
+    # Apply brightness factor and clamp to 0-255
+    red = max(0, min(255, int(red * factor)))
+    green = max(0, min(255, int(green * factor)))
+    blue = max(0, min(255, int(blue * factor)))
+
+    # Recombine into a single ARGB integer
+    return (alpha << 24) | (red << 16) | (green << 8) | blue
+
 def color_vars_to_color_code(variables: dict, palette: dict) -> dict:
     """
     This function converts GTK color variables to color code

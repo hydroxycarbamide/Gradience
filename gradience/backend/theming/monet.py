@@ -25,7 +25,7 @@ from reportlab.graphics import renderPM
 
 from gradience.material_color_utilities_python.utils import theme_utils
 from gradience.backend.models.preset import Preset
-from gradience.backend.utils.colors import argb_to_color_code
+from gradience.backend.utils.colors import argb_to_color_code, adjust_brightness
 
 from gradience.backend.logger import Logger
 
@@ -100,14 +100,14 @@ class Monet:
                 "error_fg_color": argb_to_color_code(light_theme.onErrorContainer),
                 "window_bg_color": argb_to_color_code(light_theme.surface),
                 "window_fg_color": argb_to_color_code(light_theme.onSurface),
-                "view_bg_color": argb_to_color_code(light_theme.secondaryContainer),
+                "view_bg_color": argb_to_color_code(adjust_brightness(light_theme.secondaryContainer, 0.5)),
                 "view_fg_color": argb_to_color_code(light_theme.onSurface),
                 "headerbar_bg_color": argb_to_color_code(light_theme.secondaryContainer),
                 "headerbar_fg_color": argb_to_color_code(light_theme.onSecondaryContainer),
                 "headerbar_border_color": argb_to_color_code(light_theme.onSurface, "0.8"),
                 "headerbar_backdrop_color": "@window_bg_color",
                 "headerbar_shade_color": argb_to_color_code(light_theme.onSurface, "0.07"),
-                "sidebar_bg_color": argb_to_color_code(light_theme.secondaryContainer),
+                "sidebar_bg_color": argb_to_color_code(argb_to_color_code(light_theme.secondaryContainer)),
                 "sidebar_fg_color": argb_to_color_code(light_theme.onSecondaryContainer),
                 "sidebar_border_color": "@view_bg_color",
                 "sidebar_backdrop_color": "@window_bg_color",
@@ -146,14 +146,14 @@ class Monet:
                 "error_fg_color": argb_to_color_code(dark_theme.onErrorContainer),
                 "window_bg_color": argb_to_color_code(dark_theme.surface),
                 "window_fg_color": argb_to_color_code(dark_theme.onSurface),
-                "view_bg_color": argb_to_color_code(dark_theme.secondaryContainer),
+                "view_bg_color": argb_to_color_code(adjust_brightness(dark_theme.secondaryContainer, 0.5)),
                 "view_fg_color": argb_to_color_code(dark_theme.onSurface),
                 "headerbar_bg_color": argb_to_color_code(dark_theme.secondaryContainer),
                 "headerbar_fg_color": argb_to_color_code(dark_theme.onSecondaryContainer),
                 "headerbar_border_color": argb_to_color_code(dark_theme.onSurface, "0.8"),
                 "headerbar_backdrop_color": "@window_bg_color",
                 "headerbar_shade_color": argb_to_color_code(dark_theme.onSurface, "0.07"),
-                "sidebar_bg_color": argb_to_color_code(dark_theme.secondaryContainer),
+                "sidebar_bg_color": argb_to_color_code(adjust_brightness(dark_theme.secondaryContainer, 0.8)),
                 "sidebar_fg_color": argb_to_color_code(dark_theme.onSecondaryContainer),
                 "sidebar_border_color": "@view_bg_color",
                 "sidebar_backdrop_color": "@window_bg_color",
