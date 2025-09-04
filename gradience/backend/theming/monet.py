@@ -107,7 +107,7 @@ class Monet:
                 "headerbar_border_color": argb_to_color_code(light_theme.onSurface, "0.8"),
                 "headerbar_backdrop_color": "@window_bg_color",
                 "headerbar_shade_color": argb_to_color_code(light_theme.onSurface, "0.07"),
-                "sidebar_bg_color": argb_to_color_code(argb_to_color_code(light_theme.secondaryContainer)),
+                "sidebar_bg_color": argb_to_color_code(adjust_brightness(light_theme.secondaryContainer, 0.8)),
                 "sidebar_fg_color": argb_to_color_code(light_theme.onSecondaryContainer),
                 "sidebar_border_color": "@view_bg_color",
                 "sidebar_backdrop_color": "@window_bg_color",
