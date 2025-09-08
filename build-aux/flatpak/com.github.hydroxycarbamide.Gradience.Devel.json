@@ -44,13 +44,13 @@
     "modules" : [
         "pypi-dependencies.json",
         {
-            "name" : "python-lxml",
-            "buildsystem" : "simple",
-            "build-commands" : [
+            "name": "python-lxml",
+            "buildsystem": "simple",
+            "build-commands": [
                 "python3 setup.py build --with-cython",
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources" : [
+            "sources": [
                 {
                     "type" : "archive",
                     "url" : "https://github.com/lxml/lxml/archive/refs/tags/lxml-6.0.0.tar.gz",
@@ -65,65 +65,65 @@
                 {
                     "type" : "git",
                     "url": "https://github.com/GNOME/blueprint-compiler",
-                    "branch" : "main"
+                    "tag" : "v0.18.0"
                 }
             ]
         },
         {
-            "name" : "sassc",
-            "sources" : [
+            "name": "sassc",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/sass/sassc.git",
-                    "tag" : "3.6.2"
+                    "type": "git",
+                    "url": "https://github.com/sass/sassc.git",
+                    "tag": "3.6.2"
                 },
                 {
-                    "type" : "script",
-                    "dest-filename" : "autogen.sh",
-                    "commands" : [
+                    "type": "script",
+                    "dest-filename": "autogen.sh",
+                    "commands": [
                         "autoreconf -si"
                     ]
                 }
             ],
-            "cleanup" : [
+            "cleanup": [
                 "*"
             ],
-            "modules" : [
+            "modules": [
                 {
-                    "name" : "libsass",
-                    "sources" : [
+                    "name": "libsass",
+                    "sources": [
                         {
-                            "type" : "git",
-                            "url" : "https://github.com/sass/libsass.git",
-                            "tag" : "3.6.6"
+                            "type": "git",
+                            "url": "https://github.com/sass/libsass.git",
+                            "tag": "3.6.6"
                         },
                         {
-                            "type" : "script",
-                            "dest-filename" : "autogen.sh",
-                            "commands" : [
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [
                                 "autoreconf -si"
                             ]
                         }
                     ],
-                    "cleanup" : [
+                    "cleanup": [
                         "*"
                     ]
                 }
             ]
         },
         {
-            "name" : "libportal",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Ddocs=false",
                 "-Dvapi=false",
                 "-Dbackend-gtk4=enabled"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/flatpak/libportal.git",
-                    "branch" : "main"
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
+                    "tag": "0.9.1"
                 }
             ]
         },
