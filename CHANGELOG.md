@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update runtime to GNOME 48
+- Update runtime to GNOME 49
 - Move reset and restore preset options to preferences
 
 ### Fixed
