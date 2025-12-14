@@ -16,14 +16,12 @@ jobs:
       # Don't fail the whole workflow if one architecture fails
       fail-fast: false
       matrix:
-        arch: [x86_64, aarch64]
-        runner: [ubuntu-24.04, ubuntu-24.04-arm]
-        include:
+        variant:
           - arch: x86_64
             runner: ubuntu-24.04
           - arch: aarch64
             runner: ubuntu-24.04-arm
-    runs-on: ${{ matrix.runner }}
+    runs-on: ${{ matrix.variant.runner }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -41,8 +39,8 @@ jobs:
         with:
           bundle: com.github.hydroxycarbamide.Gradience.flatpak
           manifest-path: build-aux/flatpak/com.github.hydroxycarbamide.Gradience.json
-          cache-key: flatpak-builder-${{ github.sha }}-${{ matrix.arch }}
-          arch: ${{ matrix.arch }}
+          cache-key: flatpak-builder-${{ github.sha }}-${{ matrix.variant.arch }}
+          arch: ${{ matrix.variant.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           verbose: true
 
@@ -51,7 +49,7 @@ jobs:
           repository-name: gnome-nightly
           bundle: com.github.hydroxycarbamide.Gradience.Devel.flatpak
           manifest-path: build-aux/flatpak/com.github.hydroxycarbamide.Gradience.Devel.json
-          cache-key: flatpak-builder-${{ github.sha }}-${{ matrix.arch }}
-          arch: ${{ matrix.arch }}
+          cache-key: flatpak-builder-${{ github.sha }}-${{ matrix.variant.arch }}
+          arch: ${{ matrix.variant.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           verbose: true
