@@ -27,6 +27,7 @@
 # or more simply, just push and the bot will do this for you.
 
 anyascii
+pybind11
 svglib
 Jinja2
 pillow
