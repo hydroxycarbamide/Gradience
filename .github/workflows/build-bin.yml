@@ -80,7 +80,7 @@ jobs:
           ninja -C build install
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: gradience-${{ matrix.variant.arch }}
           path: dist/**/*
